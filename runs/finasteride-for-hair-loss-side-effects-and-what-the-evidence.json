@@ -1,0 +1,594 @@
+{
+  "topic": "finasteride for hair loss: side effects and what the evidence says",
+  "slug": "finasteride-for-hair-loss-side-effects-and-what-the-evidence",
+  "models": {
+    "researcher": "anthropic/claude-sonnet-5-5",
+    "writer": "anthropic/claude-sonnet-5-5",
+    "judge": "anthropic/claude-opus-5-5",
+    "editor": "anthropic/claude-opus-5-5"
+  },
+  "startedAt": "2026-10-02T21:56:32.419Z",
+  "steps": [
+    {
+      "name": "1 · research",
+      "ms": 32298,
+      "ok": true,
+      "output": {
+        "toolCalls": [
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "finasteride androgenetic alopecia randomized controlled trial efficacy men"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "finasteride sexual adverse effects systematic review meta-analysis"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "post-finasteride syndrome persistent sexual dysfunction"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "finasteride depression suicidality risk"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "topical finasteride versus oral finasteride androgenetic alopecia"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "9777765"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "30206635"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "33814544"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "34634163"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "39953145"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "28396101"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "41330881"
+            }
+          }
+        ],
+        "brief": {
+          "topic": "Finasteride for hair loss: side effects and what the evidence says",
+          "readerQuestion": "Does finasteride actually regrow hair, and how likely are the sexual and mental health side effects (like post-finasteride syndrome)?",
+          "claims": [
+            {
+              "id": "c1",
+              "statement": "In large placebo-controlled trials in men aged 18-41, oral finasteride 1 mg/day slowed hair loss and increased hair count over 2 years.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "9777765",
+                  "quote": "In men with male pattern hair loss, finasteride 1 mg/d slowed the progression of hair loss and increased hair growth in clinical trials over 2 years."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c2",
+              "statement": "A meta-analysis of randomized trials found 1 mg finasteride in men was superior to placebo for androgenetic alopecia, though the studies were highly heterogeneous.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "28396101",
+                  "quote": "This meta-analysis strongly suggests that minoxidil, finasteride, and low-level laser light therapy are effective for promoting hair growth in men with androgenetic alopecia and that minoxidil is effective in women with androgenetic alopecia."
+                },
+                {
+                  "pmid": "28396101",
+                  "quote": "LIMITATIONS: High heterogeneity in most studies."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c3",
+              "statement": "A meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "30206635",
+                  "quote": "The relative risk was 1.66 (95% CI 1.20-2.30) for finasteride and 1.37 (95% CI 0.81-2.32) for dutasteride."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c4",
+              "statement": "Post-finasteride syndrome (persistent sexual, psychiatric and physical symptoms after stopping the drug) is debated. A recent review describes contrasting data and controversy over whether it is a true clinical entity.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "39953145",
+                  "quote": "We explore the clinical manifestations, including sexual dysfunction, neuropsychiatric symptoms, and physical changes, that collectively challenge both diagnosis and management."
+                },
+                {
+                  "pmid": "39953145",
+                  "quote": "This review evaluates the evidence for PFS, discusses potential mechanisms including neurobiological alterations, genetic predispositions, and addresses the controversies surrounding its existence and recognition by the medical community."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c5",
+              "statement": "Evidence on finasteride and depression or suicide conflicts. A systematic review reported higher odds of depressive symptoms with finasteride, while a UK Biobank cohort and Mendelian randomization study found no significant association.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "33814544",
+                  "quote": "Crude pooled rates of depressive symptoms with versus without finasteride were 3.33% (confidence interval, 3.22%-3.44%) versus 2.54% (2.44%-2.64%); random-effects meta-analysis yielded an odds ratio of 2.14 (1.40-3.27) (both P < 0.0001)."
+                },
+                {
+                  "pmid": "41330881",
+                  "quote": "COX regression analysis also showed that finasteride use is not significantly associated with depression or suicide events in the UK Biobank cohort, whether or not covariates were considered."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c6",
+              "statement": "A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. This is short-term data, and it does not show that topical use avoids sexual side effects.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "34634163",
+                  "quote": "Its effect is similar to that of oral finasteride, but with markedly lower systemic exposure and less impact on serum DHT concentrations."
+                },
+                {
+                  "pmid": "34634163",
+                  "quote": "Change from baseline in target area hair count (TAHC) at week 24 (primary efficacy endpoint) was significantly greater with topical finasteride than placebo (adjusted mean change 20.2 vs. 6.7 hairs; P < 0.001), and numerically similar between topical and oral finasteride."
+                }
+              ],
+              "searches": []
+            }
+          ],
+          "advice": [
+            "Talk to a dermatologist or doctor before starting finasteride. It is a prescription drug, and they can go over your personal risk factors and history.",
+            "Tell your prescriber right away if you notice sexual problems or mood changes, including low mood or thoughts of self-harm, while taking it. Don't stop or change any medication without medical advice.",
+            "If you already have depression, anxiety, or sexual dysfunction, bring that up before starting.",
+            "Ask your doctor about alternatives or add-ons such as minoxidil, and about topical finasteride if you are worried about systemic side effects.",
+            "Don't buy finasteride from unregulated online sellers, and don't self-dose with prostate-strength 5 mg tablets without medical guidance."
+          ]
+        },
+        "usage": {
+          "inputTokens": 19343,
+          "inputTokenDetails": {
+            "noCacheTokens": 19343,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
+          },
+          "outputTokens": 2422,
+          "outputTokenDetails": {
+            "textTokens": 2422,
+            "reasoningTokens": 0
+          },
+          "totalTokens": 21765
+        }
+      }
+    },
+    {
+      "name": "2 · verify citations",
+      "ms": 29757,
+      "ok": true,
+      "output": {
+        "brief": {
+          "topic": "Finasteride for hair loss: side effects and what the evidence says",
+          "readerQuestion": "Does finasteride actually regrow hair, and how likely are the sexual and mental health side effects (like post-finasteride syndrome)?",
+          "claims": [
+            {
+              "id": "c1",
+              "statement": "In large placebo-controlled trials in men aged 18-41, oral finasteride 1 mg/day slowed hair loss and increased hair count over 2 years.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "9777765",
+                  "quote": "In men with male pattern hair loss, finasteride 1 mg/d slowed the progression of hair loss and increased hair growth in clinical trials over 2 years."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c2",
+              "statement": "A meta-analysis of randomized trials found 1 mg finasteride in men was superior to placebo for androgenetic alopecia, though the studies were highly heterogeneous.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "28396101",
+                  "quote": "This meta-analysis strongly suggests that minoxidil, finasteride, and low-level laser light therapy are effective for promoting hair growth in men with androgenetic alopecia and that minoxidil is effective in women with androgenetic alopecia."
+                },
+                {
+                  "pmid": "28396101",
+                  "quote": "LIMITATIONS: High heterogeneity in most studies."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c3",
+              "statement": "A meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "30206635",
+                  "quote": "The relative risk was 1.66 (95% CI 1.20-2.30) for finasteride and 1.37 (95% CI 0.81-2.32) for dutasteride."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c4",
+              "statement": "Post-finasteride syndrome (persistent sexual, psychiatric and physical symptoms after stopping the drug) is debated. A recent review describes contrasting data and controversy over whether it is a true clinical entity.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "39953145",
+                  "quote": "We explore the clinical manifestations, including sexual dysfunction, neuropsychiatric symptoms, and physical changes, that collectively challenge both diagnosis and management."
+                },
+                {
+                  "pmid": "39953145",
+                  "quote": "This review evaluates the evidence for PFS, discusses potential mechanisms including neurobiological alterations, genetic predispositions, and addresses the controversies surrounding its existence and recognition by the medical community."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c5",
+              "statement": "Evidence on finasteride and depression or suicide conflicts. A systematic review reported higher odds of depressive symptoms with finasteride, while a UK Biobank cohort and Mendelian randomization study found no significant association.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "33814544",
+                  "quote": "Crude pooled rates of depressive symptoms with versus without finasteride were 3.33% (confidence interval, 3.22%-3.44%) versus 2.54% (2.44%-2.64%); random-effects meta-analysis yielded an odds ratio of 2.14 (1.40-3.27) (both P < 0.0001)."
+                },
+                {
+                  "pmid": "41330881",
+                  "quote": "COX regression analysis also showed that finasteride use is not significantly associated with depression or suicide events in the UK Biobank cohort, whether or not covariates were considered."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c6",
+              "statement": "A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. This is short-term data, and it does not show that topical use avoids sexual side effects.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "34634163",
+                  "quote": "Its effect is similar to that of oral finasteride, but with markedly lower systemic exposure and less impact on serum DHT concentrations."
+                },
+                {
+                  "pmid": "34634163",
+                  "quote": "Change from baseline in target area hair count (TAHC) at week 24 (primary efficacy endpoint) was significantly greater with topical finasteride than placebo (adjusted mean change 20.2 vs. 6.7 hairs; P < 0.001), and numerically similar between topical and oral finasteride."
+                }
+              ],
+              "searches": []
+            }
+          ],
+          "advice": [
+            "Talk to a dermatologist or doctor before starting finasteride. It is a prescription drug, and they can go over your personal risk factors and history.",
+            "Tell your prescriber right away if you notice sexual problems or mood changes, including low mood or thoughts of self-harm, while taking it. Don't stop or change any medication without medical advice.",
+            "If you already have depression, anxiety, or sexual dysfunction, bring that up before starting.",
+            "Ask your doctor about alternatives or add-ons such as minoxidil, and about topical finasteride if you are worried about systemic side effects.",
+            "Don't buy finasteride from unregulated online sellers, and don't self-dose with prostate-strength 5 mg tablets without medical guidance."
+          ]
+        },
+        "checks": [
+          {
+            "claimId": "c1",
+            "original": "In large placebo-controlled trials in men aged 18-41, oral finasteride 1 mg/day slowed hair loss and increased hair count over 2 years.",
+            "evidence": [
+              {
+                "claimId": "c1",
+                "pmid": "9777765",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract describes two placebo-controlled 1-year trials in 1553 men aged 18-41, with a blinded second-year extension. It reports that finasteride 1 mg/d slowed hair loss and increased hair count, by 107 and 138 hairs vs placebo at 1 and 2 years. This matches the population, comparator, dose, outcome and 2-year timeframe in the claim.",
+              "narrowed": "In large placebo-controlled trials in men aged 18-41, oral finasteride 1 mg/day slowed hair loss and increased hair count over 2 years."
+            }
+          },
+          {
+            "claimId": "c2",
+            "original": "A meta-analysis of randomized trials found 1 mg finasteride in men was superior to placebo for androgenetic alopecia, though the studies were highly heterogeneous.",
+            "evidence": [
+              {
+                "claimId": "c2",
+                "pmid": "28396101",
+                "exists": true,
+                "quoteFound": true
+              },
+              {
+                "claimId": "c2",
+                "pmid": "28396101",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The meta-analysis of randomized controlled trials found 1 mg finasteride in men superior to placebo (P < .00001) for androgenetic alopecia. It lists high heterogeneity in most studies as a limitation, though the abstract does not say this applies specifically to the finasteride group.",
+              "narrowed": "A meta-analysis of randomized trials found 1 mg finasteride in men was superior to placebo for androgenetic alopecia, though the studies were highly heterogeneous."
+            }
+          },
+          {
+            "claimId": "c3",
+            "original": "A meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo.",
+            "evidence": [
+              {
+                "claimId": "c3",
+                "pmid": "30206635",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The meta-analysis of 15 randomized placebo-controlled trials in men with androgenetic alopecia reports a relative risk of 1.66 (95% CI 1.20-2.30) for sexual dysfunction with finasteride 1 mg/day versus placebo. That is about 1.7-fold, so the abstract supports the claim.",
+              "narrowed": "A meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo."
+            }
+          },
+          {
+            "claimId": "c4",
+            "original": "Post-finasteride syndrome (persistent sexual, psychiatric and physical symptoms after stopping the drug) is debated. A recent review describes contrasting data and controversy over whether it is a true clinical entity.",
+            "evidence": [
+              {
+                "claimId": "c4",
+                "pmid": "39953145",
+                "exists": true,
+                "quoteFound": true
+              },
+              {
+                "claimId": "c4",
+                "pmid": "39953145",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The review describes PFS as persistent sexual, neuropsychiatric, and physical symptoms after stopping finasteride. It explicitly discusses 'controversies surrounding its existence and recognition', 'contrasting data from literature', and calls it 'contentious'. That matches a mixed stance.",
+              "narrowed": "Post-finasteride syndrome (persistent sexual, psychiatric and physical symptoms after stopping the drug) is debated. A recent review describes contrasting data and controversy over whether it is a true clinical entity."
+            }
+          },
+          {
+            "claimId": "c5",
+            "original": "Evidence on finasteride and depression or suicide conflicts. A systematic review reported higher odds of depressive symptoms with finasteride, while a UK Biobank cohort and Mendelian randomization study found no significant association.",
+            "evidence": [
+              {
+                "claimId": "c5",
+                "pmid": "33814544",
+                "exists": true,
+                "quoteFound": true
+              },
+              {
+                "claimId": "c5",
+                "pmid": "41330881",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The systematic review and meta-analysis reports higher odds of depressive symptoms with finasteride (OR 2.14). The second study's UK Biobank Cox regression and Mendelian randomization analysis found no significant association with depression or suicide. Together they support the claim that the evidence is mixed.",
+              "narrowed": "Evidence on finasteride and depression or suicide conflicts. A systematic review reported higher odds of depressive symptoms with finasteride, while a UK Biobank cohort and Mendelian randomization study found no significant association."
+            }
+          },
+          {
+            "claimId": "c6",
+            "original": "A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. This is short-term data, and it does not show that topical use avoids sexual side effects.",
+            "evidence": [
+              {
+                "claimId": "c6",
+                "pmid": "34634163",
+                "exists": true,
+                "quoteFound": true
+              },
+              {
+                "claimId": "c6",
+                "pmid": "34634163",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The phase III, 24-week trial in adult men found hair count gains numerically similar to oral finasteride. Peak plasma finasteride was more than 100 times lower, and DHT reduction was smaller (34.5% vs 55.6%). The authors only infer a 'less likelihood' of sexual side effects; they do not show such effects are avoided. The 24-week duration fits the 'short-term' caveat. One minor gap: the claim does not say the trial was limited to men.",
+              "narrowed": "A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. This is short-term data, and it does not show that topical use avoids sexual side effects."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "3 · write",
+      "ms": 18912,
+      "ok": true,
+      "output": "# Finasteride for Hair Loss: What the Evidence Says Before You Ask for a Script\n\nHair is part of the face. You can have a sharp jawline and good skin, but if your hairline is retreating faster than you'd like, it's going to be on your mind. Finasteride is the drug everyone ends up discussing, usually in threads where one guy swears by it and the next guy says it wrecked him.\n\nHere's what the research supports, where it gets murky, and what to do with that.\n\n## Does it work?\n\nFor the main question, yes, the data is fairly solid. In large placebo-controlled trials in men aged 18-41, oral finasteride at 1 mg/day slowed hair loss and increased hair count over 2 years. [PMID:9777765]\n\nA meta-analysis of randomized trials backs that up. It found 1 mg finasteride was superior to placebo for androgenetic alopecia (male pattern hair loss), though the studies were highly heterogeneous. [PMID:28396101] That caveat matters. It means the trials differed a lot from each other, so don't treat any single number as gospel. The direction of the result is consistent, but the precise size of the benefit for you isn't something a pooled analysis can promise.\n\nSo the drug does what it's supposed to do. The real debate is about the cost.\n\n## The side effect question\n\nA meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo. [PMID:30206635] That's a real signal, and anyone telling you it's all nocebo and internet panic is skipping the data. A relative risk also isn't a verdict on your odds. It tells you the risk goes up, not that you're likely to be affected.\n\n## Post-finasteride syndrome: unsettled\n\nThis is where the forums get loud. Post-finasteride syndrome (PFS) refers to persistent sexual, psychiatric and physical symptoms after stopping the drug. Whether it's a true clinical entity is debated. A recent review describes contrasting data and controversy over its status. [PMID:39953145] It covers the clinical manifestations (sexual dysfunction, neuropsychiatric symptoms, physical changes) that make diagnosis and management difficult. [PMID:39953145] It also weighs possible mechanisms, including neurobiological alterations and genetic predispositions, alongside the arguments over whether the medical community should recognize it at all. [PMID:39953145]\n\nDon't read \"debated\" as \"fake,\" and don't read it as \"proven and common\" either. The honest answer is that nobody has settled it, and anyone claiming certainty in either direction is selling something, or venting.\n\n## Mood: the evidence conflicts\n\nDepression and suicide are the other big worry, and the research doesn't agree with itself. A systematic review reported higher odds of depressive symptoms with finasteride. [PMID:33814544] A UK Biobank cohort and Mendelian randomization study found no significant association with depression or suicide events. [PMID:41330881]\n\nDifferent study designs can land in different places, and that's what happened here. The practical takeaway isn't to pick the paper you like. It's to treat your mood as something worth watching if you start the drug.\n\n## A topical option is being tested\n\nIf systemic exposure is what bugs you, there's a newer angle. A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. [PMID:34634163]\n\nThat's promising, but keep it in proportion. It's short-term data, and it does not show that topical use avoids sexual side effects. \"Lower blood levels\" is not the same as \"no side effects,\" and the trial doesn't say otherwise.\n\n## What to actually do\n\nNone of this is a reason to panic or a reason to wave it off. It's a reason to do it with a professional involved.\n\n- **Talk to a dermatologist or doctor before starting.** Finasteride is a prescription drug, and they can go over your personal risk factors and history.\n- **Bring up your history.** If you already have depression, anxiety, or sexual dysfunction, say so before you start, not after.\n- **Know your tripwires.** If you notice sexual problems or mood changes while taking it, including low mood or thoughts of self-harm, tell your prescriber right away. Don't stop or change any medication without medical advice.\n- **Ask about alternatives and add-ons.** Minoxidil is worth a conversation. If you're worried about systemic side effects, ask about topical finasteride too.\n- **Don't cut corners on sourcing.** Skip unregulated online sellers, and don't self-dose with prostate-strength 5 mg tablets without medical guidance.\n\n## The bottom line\n\nFinasteride has decent evidence for slowing hair loss and increasing hair count, and it also carries a measurable increase in sexual dysfunction risk. The bigger questions, PFS and depression, are still contested in the literature. Topical forms look interesting but are early.\n\nThe smart move isn't to crowdsource your decision from a thread at 2 a.m. Get a proper evaluation, be upfront about your history, and decide with someone who can monitor you. Your hairline is worth protecting, but not by guessing."
+    },
+    {
+      "name": "4 · editor review (round 1)",
+      "ms": 20373,
+      "ok": true,
+      "output": {
+        "issues": [],
+        "verdict": "pass",
+        "coverage": {
+          "sentences": 57,
+          "ruled": 57,
+          "carried": 0,
+          "byBasis": {
+            "not_factual": 20,
+            "claim": 28,
+            "advice": 9
+          }
+        }
+      }
+    },
+    {
+      "name": "5 · publish",
+      "ms": 19,
+      "ok": true,
+      "output": {
+        "status": "published"
+      }
+    }
+  ],
+  "status": "published",
+  "finalDraft": "# Finasteride for Hair Loss: What the Evidence Says Before You Ask for a Script\n\nHair is part of the face. You can have a sharp jawline and good skin, but if your hairline is retreating faster than you'd like, it's going to be on your mind. Finasteride is the drug everyone ends up discussing, usually in threads where one guy swears by it and the next guy says it wrecked him.\n\nHere's what the research supports, where it gets murky, and what to do with that.\n\n## Does it work?\n\nFor the main question, yes, the data is fairly solid. In large placebo-controlled trials in men aged 18-41, oral finasteride at 1 mg/day slowed hair loss and increased hair count over 2 years. [PMID:9777765]\n\nA meta-analysis of randomized trials backs that up. It found 1 mg finasteride was superior to placebo for androgenetic alopecia (male pattern hair loss), though the studies were highly heterogeneous. [PMID:28396101] That caveat matters. It means the trials differed a lot from each other, so don't treat any single number as gospel. The direction of the result is consistent, but the precise size of the benefit for you isn't something a pooled analysis can promise.\n\nSo the drug does what it's supposed to do. The real debate is about the cost.\n\n## The side effect question\n\nA meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo. [PMID:30206635] That's a real signal, and anyone telling you it's all nocebo and internet panic is skipping the data. A relative risk also isn't a verdict on your odds. It tells you the risk goes up, not that you're likely to be affected.\n\n## Post-finasteride syndrome: unsettled\n\nThis is where the forums get loud. Post-finasteride syndrome (PFS) refers to persistent sexual, psychiatric and physical symptoms after stopping the drug. Whether it's a true clinical entity is debated. A recent review describes contrasting data and controversy over its status. [PMID:39953145] It covers the clinical manifestations (sexual dysfunction, neuropsychiatric symptoms, physical changes) that make diagnosis and management difficult. [PMID:39953145] It also weighs possible mechanisms, including neurobiological alterations and genetic predispositions, alongside the arguments over whether the medical community should recognize it at all. [PMID:39953145]\n\nDon't read \"debated\" as \"fake,\" and don't read it as \"proven and common\" either. The honest answer is that nobody has settled it, and anyone claiming certainty in either direction is selling something, or venting.\n\n## Mood: the evidence conflicts\n\nDepression and suicide are the other big worry, and the research doesn't agree with itself. A systematic review reported higher odds of depressive symptoms with finasteride. [PMID:33814544] A UK Biobank cohort and Mendelian randomization study found no significant association with depression or suicide events. [PMID:41330881]\n\nDifferent study designs can land in different places, and that's what happened here. The practical takeaway isn't to pick the paper you like. It's to treat your mood as something worth watching if you start the drug.\n\n## A topical option is being tested\n\nIf systemic exposure is what bugs you, there's a newer angle. A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. [PMID:34634163]\n\nThat's promising, but keep it in proportion. It's short-term data, and it does not show that topical use avoids sexual side effects. \"Lower blood levels\" is not the same as \"no side effects,\" and the trial doesn't say otherwise.\n\n## What to actually do\n\nNone of this is a reason to panic or a reason to wave it off. It's a reason to do it with a professional involved.\n\n- **Talk to a dermatologist or doctor before starting.** Finasteride is a prescription drug, and they can go over your personal risk factors and history.\n- **Bring up your history.** If you already have depression, anxiety, or sexual dysfunction, say so before you start, not after.\n- **Know your tripwires.** If you notice sexual problems or mood changes while taking it, including low mood or thoughts of self-harm, tell your prescriber right away. Don't stop or change any medication without medical advice.\n- **Ask about alternatives and add-ons.** Minoxidil is worth a conversation. If you're worried about systemic side effects, ask about topical finasteride too.\n- **Don't cut corners on sourcing.** Skip unregulated online sellers, and don't self-dose with prostate-strength 5 mg tablets without medical guidance.\n\n## The bottom line\n\nFinasteride has decent evidence for slowing hair loss and increasing hair count, and it also carries a measurable increase in sexual dysfunction risk. The bigger questions, PFS and depression, are still contested in the literature. Topical forms look interesting but are early.\n\nThe smart move isn't to crowdsource your decision from a thread at 2 a.m. Get a proper evaluation, be upfront about your history, and decide with someone who can monitor you. Your hairline is worth protecting, but not by guessing.",
+  "brief": {
+    "topic": "Finasteride for hair loss: side effects and what the evidence says",
+    "readerQuestion": "Does finasteride actually regrow hair, and how likely are the sexual and mental health side effects (like post-finasteride syndrome)?",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "In large placebo-controlled trials in men aged 18-41, oral finasteride 1 mg/day slowed hair loss and increased hair count over 2 years.",
+        "stance": "supported",
+        "evidence": [
+          {
+            "pmid": "9777765",
+            "quote": "In men with male pattern hair loss, finasteride 1 mg/d slowed the progression of hair loss and increased hair growth in clinical trials over 2 years."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c2",
+        "statement": "A meta-analysis of randomized trials found 1 mg finasteride in men was superior to placebo for androgenetic alopecia, though the studies were highly heterogeneous.",
+        "stance": "supported",
+        "evidence": [
+          {
+            "pmid": "28396101",
+            "quote": "This meta-analysis strongly suggests that minoxidil, finasteride, and low-level laser light therapy are effective for promoting hair growth in men with androgenetic alopecia and that minoxidil is effective in women with androgenetic alopecia."
+          },
+          {
+            "pmid": "28396101",
+            "quote": "LIMITATIONS: High heterogeneity in most studies."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c3",
+        "statement": "A meta-analysis of placebo-controlled trials found finasteride for hair loss raised the relative risk of sexual dysfunction by about 1.7-fold versus placebo.",
+        "stance": "supported",
+        "evidence": [
+          {
+            "pmid": "30206635",
+            "quote": "The relative risk was 1.66 (95% CI 1.20-2.30) for finasteride and 1.37 (95% CI 0.81-2.32) for dutasteride."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c4",
+        "statement": "Post-finasteride syndrome (persistent sexual, psychiatric and physical symptoms after stopping the drug) is debated. A recent review describes contrasting data and controversy over whether it is a true clinical entity.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "39953145",
+            "quote": "We explore the clinical manifestations, including sexual dysfunction, neuropsychiatric symptoms, and physical changes, that collectively challenge both diagnosis and management."
+          },
+          {
+            "pmid": "39953145",
+            "quote": "This review evaluates the evidence for PFS, discusses potential mechanisms including neurobiological alterations, genetic predispositions, and addresses the controversies surrounding its existence and recognition by the medical community."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c5",
+        "statement": "Evidence on finasteride and depression or suicide conflicts. A systematic review reported higher odds of depressive symptoms with finasteride, while a UK Biobank cohort and Mendelian randomization study found no significant association.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "33814544",
+            "quote": "Crude pooled rates of depressive symptoms with versus without finasteride were 3.33% (confidence interval, 3.22%-3.44%) versus 2.54% (2.44%-2.64%); random-effects meta-analysis yielded an odds ratio of 2.14 (1.40-3.27) (both P < 0.0001)."
+          },
+          {
+            "pmid": "41330881",
+            "quote": "COX regression analysis also showed that finasteride use is not significantly associated with depression or suicide events in the UK Biobank cohort, whether or not covariates were considered."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c6",
+        "statement": "A phase III trial of topical finasteride spray found hair count gains similar to oral finasteride over 24 weeks, with much lower blood drug levels and less DHT suppression. This is short-term data, and it does not show that topical use avoids sexual side effects.",
+        "stance": "supported",
+        "evidence": [
+          {
+            "pmid": "34634163",
+            "quote": "Its effect is similar to that of oral finasteride, but with markedly lower systemic exposure and less impact on serum DHT concentrations."
+          },
+          {
+            "pmid": "34634163",
+            "quote": "Change from baseline in target area hair count (TAHC) at week 24 (primary efficacy endpoint) was significantly greater with topical finasteride than placebo (adjusted mean change 20.2 vs. 6.7 hairs; P < 0.001), and numerically similar between topical and oral finasteride."
+          }
+        ],
+        "searches": []
+      }
+    ],
+    "advice": [
+      "Talk to a dermatologist or doctor before starting finasteride. It is a prescription drug, and they can go over your personal risk factors and history.",
+      "Tell your prescriber right away if you notice sexual problems or mood changes, including low mood or thoughts of self-harm, while taking it. Don't stop or change any medication without medical advice.",
+      "If you already have depression, anxiety, or sexual dysfunction, bring that up before starting.",
+      "Ask your doctor about alternatives or add-ons such as minoxidil, and about topical finasteride if you are worried about systemic side effects.",
+      "Don't buy finasteride from unregulated online sellers, and don't self-dose with prostate-strength 5 mg tablets without medical guidance."
+    ]
+  },
+  "finishedAt": "2026-10-02T21:58:13.782Z"
+}

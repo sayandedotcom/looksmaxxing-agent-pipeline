@@ -1,0 +1,18 @@
+:root{--bg:#faf9f6;--fg:#1c1b19;--muted:#6b675f;--line:#e4e0d8;--accent:#9a3412;--ok:#166534;--cut:#991b1b;--code:#f1eee7}
+@media (prefers-color-scheme:dark){:root{--bg:#161513;--fg:#ebe8e1;--muted:#9a958b;--line:#2e2c28;--accent:#fb923c;--ok:#4ade80;--cut:#f87171;--code:#22201d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,'Iowan Old Style',serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 80px}
+.top{border-bottom:1px solid var(--line);padding:14px 16px;font:600 14px/1 system-ui,sans-serif}.top a{color:var(--fg);text-decoration:none}.top span{color:var(--muted);font-weight:400}
+h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.25}h1{font-size:2rem}a{color:var(--accent)}
+sup a{text-decoration:none;font:600 .7em system-ui,sans-serif}.refs{font-size:.85em;color:var(--muted)}
+.meta{color:var(--muted);font:14px/1.5 system-ui,sans-serif}
+pre{background:var(--code);padding:12px;overflow:auto;font-size:12px;white-space:pre-wrap;border-radius:6px}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.85em}
+.step{border-left:3px solid var(--line);padding:4px 0 4px 16px;margin:24px 0;font:15px/1.5 system-ui,sans-serif}.step.err{border-color:var(--cut)}.step h3{margin:0 0 6px}.step small{color:var(--muted);font-weight:400}
+table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left}tr.cut{color:var(--cut)}tr.ok td:last-child{color:var(--ok)}
+.calls{font-size:13px;max-height:260px;overflow:auto}
+.runs{list-style:none;padding:0;font-family:system-ui,sans-serif}.runs li{padding:8px 0;border-bottom:1px solid var(--line)}
+.badge{font:600 11px system-ui;text-transform:uppercase;padding:2px 6px;border-radius:4px;border:1px solid}.published{color:var(--ok)}.held,.failed{color:var(--cut)}
+.claim{border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:10px 0;font-size:14px}.claim.cut{border-color:var(--cut)}.claim ul{margin:4px 0;padding-left:18px;font-size:13px}
+del{color:var(--cut)}ins{color:var(--ok);text-decoration:none}
+.note{background:var(--code);border-left:3px solid var(--accent);padding:10px 14px;font:14px/1.5 system-ui,sans-serif}

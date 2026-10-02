@@ -1,0 +1,541 @@
+{
+  "topic": "does chewing hard gum build a sharper jawline",
+  "slug": "v1-does-chewing-hard-gum-build-a-sharper-jawline",
+  "models": {
+    "researcher": "anthropic/claude-sonnet-5-5",
+    "writer": "anthropic/claude-sonnet-5-5",
+    "judge": "anthropic/claude-opus-5-5",
+    "editor": "anthropic/claude-opus-5-5"
+  },
+  "startedAt": "2026-10-02T21:56:32.433Z",
+  "steps": [
+    {
+      "name": "1 · research",
+      "ms": 25392,
+      "ok": true,
+      "output": {
+        "toolCalls": [
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "chewing gum masseter muscle thickness"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "masticatory muscle training hard gum healthy adults"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "chewing exercise mandible bone growth"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "excessive gum chewing temporomandibular disorder"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "chewing gum jawline facial aesthetics"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "39215439"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "40806875"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "7709901"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "39400843"
+            }
+          }
+        ],
+        "brief": {
+          "topic": "Does chewing hard gum build a sharper jawline",
+          "readerQuestion": "Does chewing hard gum (like Falim or Mastic gum) actually give you a sharper jawline?",
+          "claims": [
+            {
+              "id": "c1",
+              "statement": "In a 6-month randomized trial in healthy adults, chewing gum three times a day did not significantly change masseter thickness or mandibular shape compared with baseline.",
+              "stance": "not_supported",
+              "evidence": [
+                {
+                  "pmid": "39215439",
+                  "quote": "There was no statistically significant difference in MMT or mandibular shape compared to the baseline."
+                }
+              ],
+              "searches": [
+                "chewing gum masseter muscle thickness",
+                "chewing gum jawline facial aesthetics"
+              ]
+            },
+            {
+              "id": "c2",
+              "statement": "Gum chewing training does increase bite force in healthy adults. The strength gain was seen in a 6-month RCT and also in a small trial of hard gum.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "39215439",
+                  "quote": "Mastication training using gum increases maximum occlusal force due to an increase in occlusal contact area but has no effect on MMT or mandibular shape."
+                },
+                {
+                  "pmid": "7709901",
+                  "quote": "In conclusion, 4 weeks training with a hard chewing gum seems to influence the functional capacity of the masticatory muscles and increase their strength."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c3",
+              "statement": "Stronger bite force from chewing hard gum is a functional change. These studies don't show it makes the jaw look bigger or more defined. In the 6-month RCT, bite force rose while masseter thickness and jaw shape did not change.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "39215439",
+                  "quote": "The mean maximum occlusal force of the training group at 3 months was significantly higher than that at baseline, which was also significantly different from that in the control group (p < .001)."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c4",
+              "statement": "One month of gum chewing training changed how oxygen is used in the masseter muscle and improved its aerobic capacity. This was a very small trial (16 people) that measured muscle physiology, not appearance.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "39400843",
+                  "quote": "In conclusion, 1 month of GCh training changed masseter oxygen dynamics during clenching and recovery and improved muscle aerobic capacity."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c5",
+              "statement": "A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration or chronicity and temporomandibular disorders. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "40806875",
+                  "quote": "No statistically significant associations were found between TMD occurrence and the frequency, duration, or chronicity of gum chewing (p > 0.05)."
+                }
+              ],
+              "searches": []
+            }
+          ],
+          "advice": [
+            "Don't count on hard gum to sharpen your jawline. The best trial found no change in jaw shape.",
+            "If you try gum anyway, stop if you get jaw pain, clicking, locking or headaches, and see a dentist or TMD specialist.",
+            "Jaw definition mostly depends on body fat, bone structure and dental or skeletal alignment. A dentist, orthodontist or maxillofacial surgeon can assess your bite and facial structure.",
+            "Don't use extremely hard or non-food chewing products in place of professional advice if you already have jaw problems."
+          ]
+        },
+        "usage": {
+          "inputTokens": 12340,
+          "inputTokenDetails": {
+            "noCacheTokens": 12340,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
+          },
+          "outputTokens": 1671,
+          "outputTokenDetails": {
+            "textTokens": 1671,
+            "reasoningTokens": 0
+          },
+          "totalTokens": 14011
+        }
+      }
+    },
+    {
+      "name": "2 · verify citations",
+      "ms": 25548,
+      "ok": true,
+      "output": {
+        "brief": {
+          "topic": "Does chewing hard gum build a sharper jawline",
+          "readerQuestion": "Does chewing hard gum (like Falim or Mastic gum) actually give you a sharper jawline?",
+          "claims": [
+            {
+              "id": "c2",
+              "statement": "Gum chewing training does increase bite force in healthy adults. The strength gain was seen in a 6-month RCT and also in a small trial of hard gum.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "39215439",
+                  "quote": "Mastication training using gum increases maximum occlusal force due to an increase in occlusal contact area but has no effect on MMT or mandibular shape."
+                },
+                {
+                  "pmid": "7709901",
+                  "quote": "In conclusion, 4 weeks training with a hard chewing gum seems to influence the functional capacity of the masticatory muscles and increase their strength."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c3",
+              "statement": "Stronger bite force from chewing gum is a functional change. This study doesn't show it makes the jaw bigger or changes its shape. In the 6-month RCT in healthy adults, bite force rose while masseter thickness and jaw shape did not change.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "39215439",
+                  "quote": "The mean maximum occlusal force of the training group at 3 months was significantly higher than that at baseline, which was also significantly different from that in the control group (p < .001)."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c4",
+              "statement": "One month of gum chewing training changed how oxygen is used in the masseter muscle and improved its aerobic capacity. This was a very small trial (16 people) that measured muscle physiology, not appearance.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "39400843",
+                  "quote": "In conclusion, 1 month of GCh training changed masseter oxygen dynamics during clenching and recovery and improved muscle aerobic capacity."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c5",
+              "statement": "A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration or chronicity and temporomandibular disorders. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "40806875",
+                  "quote": "No statistically significant associations were found between TMD occurrence and the frequency, duration, or chronicity of gum chewing (p > 0.05)."
+                }
+              ],
+              "searches": []
+            }
+          ],
+          "advice": [
+            "Don't count on hard gum to sharpen your jawline. The best trial found no change in jaw shape.",
+            "If you try gum anyway, stop if you get jaw pain, clicking, locking or headaches, and see a dentist or TMD specialist.",
+            "Jaw definition mostly depends on body fat, bone structure and dental or skeletal alignment. A dentist, orthodontist or maxillofacial surgeon can assess your bite and facial structure.",
+            "Don't use extremely hard or non-food chewing products in place of professional advice if you already have jaw problems."
+          ]
+        },
+        "checks": [
+          {
+            "claimId": "c1",
+            "original": "In a 6-month randomized trial in healthy adults, chewing gum three times a day did not significantly change masseter thickness or mandibular shape compared with baseline.",
+            "evidence": [
+              {
+                "claimId": "c1",
+                "pmid": "39215439",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [
+              {
+                "query": "chewing gum masseter muscle thickness",
+                "ran": true,
+                "titles": [
+                  "Effects of gum chewing training on occlusal force, masseter muscle thickness and mandibular shape: A randomised controlled clinical trial.",
+                  "Dynamic change in the thickness of the masseter muscle between contraction and relaxation is associated with the masticatory function in older adults: a cross-sectional study.",
+                  "Gum Chewing Exercise Synchronised With Neuromuscular Electrical Stimulation is Better Than Gum Chewing Exercise Alone for Improving Masticatory Function and Mucosal Moisture in Older Adults With Sarcopenic Dysphagia.",
+                  "Relationship between chewing ability and malnutrition, sarcopenia, and frailty in older adults.",
+                  "Stomatognathic function in Duchenne muscular dystrophy: a case-control study.",
+                  "Personalised Masticatory Training Using a Visual Biofeedback-Assisted Digital Device for Improving Oral Function in Older Adults With Oral Frailty.",
+                  "Tongue thickness is associated with masticatory performance of perioral muscles: Ultrasonographic study of perioral muscle characteristics in healthy young subjects.",
+                  "Effect of biting speed and jaw separation on force used to incise food."
+                ]
+              },
+              {
+                "query": "chewing gum jawline facial aesthetics",
+                "ran": true,
+                "titles": []
+              }
+            ],
+            "kept": false,
+            "entailment": {
+              "verdict": "does_not_back",
+              "reason": "The claim is marked not_supported, but the first search result is a randomized controlled trial (PMID 39215439) that tests exactly this question. It directly supports the claim: 58 healthy adults chewed gum three times a day for 6 months, and there was no significant change in masseter thickness or mandibular shape compared with baseline. Because a study testing the claim exists and confirms it, the not_supported stance is not backed.",
+              "narrowed": "In a 6-month randomized trial in healthy adults, chewing gum three times a day did not significantly change masseter thickness or mandibular shape compared with baseline."
+            }
+          },
+          {
+            "claimId": "c2",
+            "original": "Gum chewing training does increase bite force in healthy adults. The strength gain was seen in a 6-month RCT and also in a small trial of hard gum.",
+            "evidence": [
+              {
+                "claimId": "c2",
+                "pmid": "39215439",
+                "exists": true,
+                "quoteFound": true
+              },
+              {
+                "claimId": "c2",
+                "pmid": "7709901",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "Both abstracts back the claim. The 6-month RCT in healthy adults (PMID 39215439) found a significant increase in maximum occlusal force (bite force) versus control, seen at 3 months. A small trial of 25 healthy adults chewing hard gum for 28 days (PMID 7709901) found a significant rise in maximal bite force, with no change in the control group.",
+              "narrowed": "Gum chewing training does increase bite force in healthy adults. The strength gain was seen in a 6-month RCT and also in a small trial of hard gum."
+            }
+          },
+          {
+            "claimId": "c3",
+            "original": "Stronger bite force from chewing hard gum is a functional change. These studies don't show it makes the jaw look bigger or more defined. In the 6-month RCT, bite force rose while masseter thickness and jaw shape did not change.",
+            "evidence": [
+              {
+                "claimId": "c3",
+                "pmid": "39215439",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "partial",
+              "reason": "The 6-month RCT in healthy adults found that maximum bite force rose significantly, with greater occlusal contact area, while masseter thickness and mandibular shape did not change. That matches the core claim. However, the abstract never says the gum was hard, and only one study is provided, not several.",
+              "narrowed": "Stronger bite force from chewing gum is a functional change. This study doesn't show it makes the jaw bigger or changes its shape. In the 6-month RCT in healthy adults, bite force rose while masseter thickness and jaw shape did not change."
+            }
+          },
+          {
+            "claimId": "c4",
+            "original": "One month of gum chewing training changed how oxygen is used in the masseter muscle and improved its aerobic capacity. This was a very small trial (16 people) that measured muscle physiology, not appearance.",
+            "evidence": [
+              {
+                "claimId": "c4",
+                "pmid": "39400843",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract states that 1 month of gum chewing training changed masseter oxygen dynamics and improved muscle aerobic capacity, in 16 healthy adults. The outcomes were NIRS hemoglobin measures, recovery time and VAS fatigue, all physiological, with nothing on appearance. The caveat about the small sample is accurate.",
+              "narrowed": "One month of gum chewing training changed how oxygen is used in the masseter muscle and improved its aerobic capacity. This was a very small trial (16 people) that measured muscle physiology, not appearance."
+            }
+          },
+          {
+            "claimId": "c5",
+            "original": "A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration or chronicity and temporomandibular disorders. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe.",
+            "evidence": [
+              {
+                "claimId": "c5",
+                "pmid": "40806875",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract describes a cross-sectional study of 66 adults aged 19-30 that found no significant association between TMD and gum-chewing frequency, duration or chronicity (p > 0.05). It states that the limited sample size limits statistical power and that the cross-sectional design precludes causal interpretation. The claim's caveat that the study doesn't prove heavy chewing is safe follows directly from these stated limitations.",
+              "narrowed": "A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration or chronicity and temporomandibular disorders. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "3 · write",
+      "ms": 20388,
+      "ok": true,
+      "output": "# Does Hard Gum Actually Build a Better Jawline?\n\nIf you've spent any time in mewing and jaw-training threads, you've seen the pitch: chew hard gum, work the masseters, get a sharper jaw. Some of that holds up. The part you actually care about mostly doesn't. Here's what the trials show.\n\n## Yes, your bite gets stronger\n\nChewing gum as training does increase bite force in healthy adults. A 6-month RCT showed it, and so did a small trial of hard gum. [PMID:39215439] [PMID:7709901]\n\nThe hard gum trial was short, only four weeks, but its authors concluded the training seemed to influence the functional capacity of the masticatory muscles and increase their strength. [PMID:7709901]\n\nIf your goal is \"my jaw muscles can produce more force,\" the evidence says gum can do that.\n\n## Stronger is not bigger, and it's not sharper\n\nBite force is a functional change. In the 6-month RCT, the training group's maximum bite force ended up significantly higher than at baseline and higher than the control group's. [PMID:39215439] But masseter thickness and jaw shape didn't change. [PMID:39215439]\n\nSo the best trial we have shows people getting stronger without getting a different-looking jaw. If you were hoping the trial would show a masseter bulking up and carving out an angle, it didn't.\n\nThis is also the main reason to be skeptical of before-and-after photos from gum routines. Lighting, weight changes, and head angle can account for a lot. The one controlled trial that measured shape found none.\n\n## The muscle does adapt, just not visibly (as far as we know)\n\nA one-month gum chewing trial changed how oxygen is used in the masseter during clenching and recovery, and it improved the muscle's aerobic capacity. [PMID:39400843] That sounds promising until you check the details: it was a very small trial of 16 people, and it measured muscle physiology, not appearance. [PMID:39400843]\n\nSo the muscle adapts in ways you can measure with the right equipment. That doesn't mean the adaptation shows up in the mirror, and nothing in these trials claims it does.\n\n## What about wrecking your jaw joint?\n\nThis is the other question in every thread: does heavy chewing mess up your TMJ? A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration, or chronicity and temporomandibular disorders (TMD). [PMID:40806875]\n\nDon't read that as a green light. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe. [PMID:40806875] \"We didn't detect a link in a small sample\" is a different statement from \"there's no risk.\" If you're pushing hard gum for hours a day, you're running your own experiment with no safety data behind you.\n\n## What to do with this\n\n**Don't count on hard gum to sharpen your jawline.** The best trial found no change in jaw shape. If you chew gum anyway because you like it or want the bite-strength gain, fine. Just don't expect a new face.\n\n**If you try it, know when to stop.** Quit if you get jaw pain, clicking, locking, or headaches, and see a dentist or TMD specialist. Those are your cues to stop experimenting.\n\n**If you already have jaw problems, skip the DIY.** Don't use extremely hard or non-food chewing products in place of professional advice. That includes the \"jaw trainer\" stuff that gets marketed as a shortcut.\n\n**Look at what actually drives jaw definition.** It mostly comes down to body fat, bone structure, and dental or skeletal alignment. Two of those you can't change with a snack, and the third you can change with a long-term, boring plan.\n\n- **Body fat:** This is the lever most guys can pull. If your jaw looks soft, the issue may be what's covering it, not what's underneath.\n- **Bone structure:** Fixed unless you go the surgical route, which is a conversation with a professional, not a forum.\n- **Alignment:** Your bite and how your teeth and jaws line up are things a professional can assess.\n\n**Get your structure assessed by someone qualified.** A dentist, orthodontist, or maxillofacial surgeon can evaluate your bite and facial structure. That's a more useful answer than another thread of strangers guessing from a photo. If something about your bite or jaw bugs you, they can tell you whether it's an alignment issue, a structural one, or just normal variation.\n\n## Bottom line\n\nGum chewing training makes your bite stronger. That's supported. It also changed masseter oxygen use in a tiny one-month trial. [PMID:39400843] What the evidence doesn't show is a bigger masseter or a reshaped jaw, which is what most people are chewing for. [PMID:39215439]\n\nIf you like gum, chew gum. If you want a different jawline, put your effort into body composition and get a professional opinion on your bite and structure. That's less exciting than a jaw hack, but it's where the evidence points."
+    },
+    {
+      "name": "4 · editor review (round 1)",
+      "ms": 31336,
+      "ok": true,
+      "output": {
+        "issues": [
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "Lighting, weight changes, and head angle can account for a lot.",
+            "fix": "Nothing in the brief covers what drives before-and-after photo differences. Cut this sentence or soften it to an explicitly hedged aside, e.g. 'Photos can also differ for reasons that have nothing to do with chewing.'"
+          },
+          {
+            "kind": "overstated",
+            "excerpt": "The one controlled trial that measured shape found none.",
+            "fix": "The brief calls it the best trial, not the only one. Rephrase: 'The best controlled trial we have measured jaw shape and found no change.'"
+          },
+          {
+            "kind": "overstated",
+            "excerpt": "If you're pushing hard gum for hours a day, you're running your own experiment with no safety data behind you.",
+            "fix": "There is some data (the small TMD study), just not enough to show it's safe. Rephrase: 'you're running your own experiment without good evidence that it's safe.'"
+          },
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "**Look at what actually drives jaw definition.** It mostly comes down to body fat, bone structure, and dental or skeletal alignment.",
+            "fix": "What drives jaw definition appears only in the advice list, with no claim or evidence behind it. Frame it as general guidance rather than an evidence finding (e.g. 'Jaw definition is generally thought to depend more on body fat, bone structure, and alignment'), or add a sourced claim."
+          }
+        ],
+        "verdict": "revise",
+        "coverage": {
+          "sentences": 55,
+          "ruled": 55,
+          "carried": 0,
+          "byBasis": {
+            "not_factual": 14,
+            "claim": 26,
+            "advice": 15
+          }
+        }
+      }
+    },
+    {
+      "name": "3 · revise (round 1)",
+      "ms": 8224,
+      "ok": true,
+      "output": "# Does Hard Gum Actually Build a Better Jawline?\n\nIf you've spent any time in mewing and jaw-training threads, you've seen the pitch: chew hard gum, work the masseters, get a sharper jaw. Some of that holds up. The part you actually care about mostly doesn't. Here's what the trials show.\n\n## Yes, your bite gets stronger\n\nChewing gum as training does increase bite force in healthy adults. A 6-month RCT showed it, and so did a small trial of hard gum. [PMID:39215439] [PMID:7709901]\n\nThe hard gum trial was short, only four weeks, but its authors concluded the training seemed to influence the functional capacity of the masticatory muscles and increase their strength. [PMID:7709901]\n\nIf your goal is \"my jaw muscles can produce more force,\" the evidence says gum can do that.\n\n## Stronger is not bigger, and it's not sharper\n\nBite force is a functional change. In the 6-month RCT, the training group's maximum bite force ended up significantly higher than at baseline and higher than the control group's. [PMID:39215439] But masseter thickness and jaw shape didn't change. [PMID:39215439]\n\nSo the best trial we have shows people getting stronger without getting a different-looking jaw. If you were hoping the trial would show a masseter bulking up and carving out an angle, it didn't.\n\nThis is also the main reason to be skeptical of before-and-after photos from gum routines. Photos can also differ for reasons that have nothing to do with chewing. The best controlled trial we have measured jaw shape and found no change.\n\n## The muscle does adapt, just not visibly (as far as we know)\n\nA one-month gum chewing trial changed how oxygen is used in the masseter during clenching and recovery, and it improved the muscle's aerobic capacity. [PMID:39400843] That sounds promising until you check the details: it was a very small trial of 16 people, and it measured muscle physiology, not appearance. [PMID:39400843]\n\nSo the muscle adapts in ways you can measure with the right equipment. That doesn't mean the adaptation shows up in the mirror, and nothing in these trials claims it does.\n\n## What about wrecking your jaw joint?\n\nThis is the other question in every thread: does heavy chewing mess up your TMJ? A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration, or chronicity and temporomandibular disorders (TMD). [PMID:40806875]\n\nDon't read that as a green light. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe. [PMID:40806875] \"We didn't detect a link in a small sample\" is a different statement from \"there's no risk.\" If you're pushing hard gum for hours a day, you're running your own experiment without good evidence that it's safe.\n\n## What to do with this\n\n**Don't count on hard gum to sharpen your jawline.** The best trial found no change in jaw shape. If you chew gum anyway because you like it or want the bite-strength gain, fine. Just don't expect a new face.\n\n**If you try it, know when to stop.** Quit if you get jaw pain, clicking, locking, or headaches, and see a dentist or TMD specialist. Those are your cues to stop experimenting.\n\n**If you already have jaw problems, skip the DIY.** Don't use extremely hard or non-food chewing products in place of professional advice. That includes the \"jaw trainer\" stuff that gets marketed as a shortcut.\n\n**Look at what actually drives jaw definition.** Jaw definition is generally thought to depend more on body fat, bone structure, and dental or skeletal alignment. Two of those you can't change with a snack, and the third you can change with a long-term, boring plan.\n\n- **Body fat:** This is the lever most guys can pull. If your jaw looks soft, the issue may be what's covering it, not what's underneath.\n- **Bone structure:** Fixed unless you go the surgical route, which is a conversation with a professional, not a forum.\n- **Alignment:** Your bite and how your teeth and jaws line up are things a professional can assess.\n\n**Get your structure assessed by someone qualified.** A dentist, orthodontist, or maxillofacial surgeon can evaluate your bite and facial structure. That's a more useful answer than another thread of strangers guessing from a photo. If something about your bite or jaw bugs you, they can tell you whether it's an alignment issue, a structural one, or just normal variation.\n\n## Bottom line\n\nGum chewing training makes your bite stronger. That's supported. It also changed masseter oxygen use in a tiny one-month trial. [PMID:39400843] What the evidence doesn't show is a bigger masseter or a reshaped jaw, which is what most people are chewing for. [PMID:39215439]\n\nIf you like gum, chew gum. If you want a different jawline, put your effort into body composition and get a professional opinion on your bite and structure. That's less exciting than a jaw hack, but it's where the evidence points."
+    },
+    {
+      "name": "4 · editor review (round 2)",
+      "ms": 7607,
+      "ok": true,
+      "output": {
+        "issues": [
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "**Look at what actually drives jaw definition.** Jaw definition is generally thought to depend more on body fat, bone structure, and dental or skeletal alignment.",
+            "fix": "No claim in the brief supports what determines jaw definition. Reframe it as guidance rather than fact, e.g. \"Instead of gum, look at the things a professional can actually assess: body fat, bone structure, and dental or skeletal alignment.\" Or cut the causal assertion."
+          }
+        ],
+        "verdict": "revise",
+        "coverage": {
+          "sentences": 55,
+          "ruled": 55,
+          "carried": 51,
+          "byBasis": {
+            "not_factual": 15,
+            "claim": 25,
+            "advice": 15
+          }
+        }
+      }
+    },
+    {
+      "name": "3 · revise (round 2)",
+      "ms": 11102,
+      "ok": true,
+      "output": "# Does Hard Gum Actually Build a Better Jawline?\n\nIf you've spent any time in mewing and jaw-training threads, you've seen the pitch: chew hard gum, work the masseters, get a sharper jaw. Some of that holds up. The part you actually care about mostly doesn't. Here's what the trials show.\n\n## Yes, your bite gets stronger\n\nChewing gum as training does increase bite force in healthy adults. A 6-month RCT showed it, and so did a small trial of hard gum. [PMID:39215439] [PMID:7709901]\n\nThe hard gum trial was short, only four weeks, but its authors concluded the training seemed to influence the functional capacity of the masticatory muscles and increase their strength. [PMID:7709901]\n\nIf your goal is \"my jaw muscles can produce more force,\" the evidence says gum can do that.\n\n## Stronger is not bigger, and it's not sharper\n\nBite force is a functional change. In the 6-month RCT, the training group's maximum bite force ended up significantly higher than at baseline and higher than the control group's. [PMID:39215439] But masseter thickness and jaw shape didn't change. [PMID:39215439]\n\nSo the best trial we have shows people getting stronger without getting a different-looking jaw. If you were hoping the trial would show a masseter bulking up and carving out an angle, it didn't.\n\nThis is also the main reason to be skeptical of before-and-after photos from gum routines. Photos can also differ for reasons that have nothing to do with chewing. The best controlled trial we have measured jaw shape and found no change.\n\n## The muscle does adapt, just not visibly (as far as we know)\n\nA one-month gum chewing trial changed how oxygen is used in the masseter during clenching and recovery, and it improved the muscle's aerobic capacity. [PMID:39400843] That sounds promising until you check the details: it was a very small trial of 16 people, and it measured muscle physiology, not appearance. [PMID:39400843]\n\nSo the muscle adapts in ways you can measure with the right equipment. That doesn't mean the adaptation shows up in the mirror, and nothing in these trials claims it does.\n\n## What about wrecking your jaw joint?\n\nThis is the other question in every thread: does heavy chewing mess up your TMJ? A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration, or chronicity and temporomandibular disorders (TMD). [PMID:40806875]\n\nDon't read that as a green light. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe. [PMID:40806875] \"We didn't detect a link in a small sample\" is a different statement from \"there's no risk.\" If you're pushing hard gum for hours a day, you're running your own experiment without good evidence that it's safe.\n\n## What to do with this\n\n**Don't count on hard gum to sharpen your jawline.** The best trial found no change in jaw shape. If you chew gum anyway because you like it or want the bite-strength gain, fine. Just don't expect a new face.\n\n**If you try it, know when to stop.** Quit if you get jaw pain, clicking, locking, or headaches, and see a dentist or TMD specialist. Those are your cues to stop experimenting.\n\n**If you already have jaw problems, skip the DIY.** Don't use extremely hard or non-food chewing products in place of professional advice. That includes the \"jaw trainer\" stuff that gets marketed as a shortcut.\n\n**Instead of gum, look at body fat, bone structure, and alignment.** These are the things worth having a professional assess. Two of those you can't change with a snack, and the third you can change with a long-term, boring plan.\n\n- **Body fat:** This is the lever most guys can pull. If your jaw looks soft, the issue may be what's covering it, not what's underneath.\n- **Bone structure:** Fixed unless you go the surgical route, which is a conversation with a professional, not a forum.\n- **Alignment:** Your bite and how your teeth and jaws line up are things a professional can assess.\n\n**Get your structure assessed by someone qualified.** A dentist, orthodontist, or maxillofacial surgeon can evaluate your bite and facial structure. That's a more useful answer than another thread of strangers guessing from a photo. If something about your bite or jaw bugs you, they can tell you whether it's an alignment issue, a structural one, or just normal variation.\n\n## Bottom line\n\nGum chewing training makes your bite stronger. That's supported. It also changed masseter oxygen use in a tiny one-month trial. [PMID:39400843] What the evidence doesn't show is a bigger masseter or a reshaped jaw, which is what most people are chewing for. [PMID:39215439]\n\nIf you like gum, chew gum. If you want a different jawline, put your effort into body composition and get a professional opinion on your bite and structure. That's less exciting than a jaw hack, but it's where the evidence points."
+    },
+    {
+      "name": "4 · editor review (round 3)",
+      "ms": 3778,
+      "ok": true,
+      "output": {
+        "issues": [],
+        "verdict": "pass",
+        "coverage": {
+          "sentences": 55,
+          "ruled": 55,
+          "carried": 54,
+          "byBasis": {
+            "not_factual": 15,
+            "claim": 25,
+            "advice": 15
+          }
+        }
+      }
+    },
+    {
+      "name": "5 · publish",
+      "ms": 21,
+      "ok": true,
+      "output": {
+        "status": "published"
+      }
+    }
+  ],
+  "status": "published",
+  "finalDraft": "# Does Hard Gum Actually Build a Better Jawline?\n\nIf you've spent any time in mewing and jaw-training threads, you've seen the pitch: chew hard gum, work the masseters, get a sharper jaw. Some of that holds up. The part you actually care about mostly doesn't. Here's what the trials show.\n\n## Yes, your bite gets stronger\n\nChewing gum as training does increase bite force in healthy adults. A 6-month RCT showed it, and so did a small trial of hard gum. [PMID:39215439] [PMID:7709901]\n\nThe hard gum trial was short, only four weeks, but its authors concluded the training seemed to influence the functional capacity of the masticatory muscles and increase their strength. [PMID:7709901]\n\nIf your goal is \"my jaw muscles can produce more force,\" the evidence says gum can do that.\n\n## Stronger is not bigger, and it's not sharper\n\nBite force is a functional change. In the 6-month RCT, the training group's maximum bite force ended up significantly higher than at baseline and higher than the control group's. [PMID:39215439] But masseter thickness and jaw shape didn't change. [PMID:39215439]\n\nSo the best trial we have shows people getting stronger without getting a different-looking jaw. If you were hoping the trial would show a masseter bulking up and carving out an angle, it didn't.\n\nThis is also the main reason to be skeptical of before-and-after photos from gum routines. Photos can also differ for reasons that have nothing to do with chewing. The best controlled trial we have measured jaw shape and found no change.\n\n## The muscle does adapt, just not visibly (as far as we know)\n\nA one-month gum chewing trial changed how oxygen is used in the masseter during clenching and recovery, and it improved the muscle's aerobic capacity. [PMID:39400843] That sounds promising until you check the details: it was a very small trial of 16 people, and it measured muscle physiology, not appearance. [PMID:39400843]\n\nSo the muscle adapts in ways you can measure with the right equipment. That doesn't mean the adaptation shows up in the mirror, and nothing in these trials claims it does.\n\n## What about wrecking your jaw joint?\n\nThis is the other question in every thread: does heavy chewing mess up your TMJ? A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration, or chronicity and temporomandibular disorders (TMD). [PMID:40806875]\n\nDon't read that as a green light. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe. [PMID:40806875] \"We didn't detect a link in a small sample\" is a different statement from \"there's no risk.\" If you're pushing hard gum for hours a day, you're running your own experiment without good evidence that it's safe.\n\n## What to do with this\n\n**Don't count on hard gum to sharpen your jawline.** The best trial found no change in jaw shape. If you chew gum anyway because you like it or want the bite-strength gain, fine. Just don't expect a new face.\n\n**If you try it, know when to stop.** Quit if you get jaw pain, clicking, locking, or headaches, and see a dentist or TMD specialist. Those are your cues to stop experimenting.\n\n**If you already have jaw problems, skip the DIY.** Don't use extremely hard or non-food chewing products in place of professional advice. That includes the \"jaw trainer\" stuff that gets marketed as a shortcut.\n\n**Instead of gum, look at body fat, bone structure, and alignment.** These are the things worth having a professional assess. Two of those you can't change with a snack, and the third you can change with a long-term, boring plan.\n\n- **Body fat:** This is the lever most guys can pull. If your jaw looks soft, the issue may be what's covering it, not what's underneath.\n- **Bone structure:** Fixed unless you go the surgical route, which is a conversation with a professional, not a forum.\n- **Alignment:** Your bite and how your teeth and jaws line up are things a professional can assess.\n\n**Get your structure assessed by someone qualified.** A dentist, orthodontist, or maxillofacial surgeon can evaluate your bite and facial structure. That's a more useful answer than another thread of strangers guessing from a photo. If something about your bite or jaw bugs you, they can tell you whether it's an alignment issue, a structural one, or just normal variation.\n\n## Bottom line\n\nGum chewing training makes your bite stronger. That's supported. It also changed masseter oxygen use in a tiny one-month trial. [PMID:39400843] What the evidence doesn't show is a bigger masseter or a reshaped jaw, which is what most people are chewing for. [PMID:39215439]\n\nIf you like gum, chew gum. If you want a different jawline, put your effort into body composition and get a professional opinion on your bite and structure. That's less exciting than a jaw hack, but it's where the evidence points.",
+  "brief": {
+    "topic": "Does chewing hard gum build a sharper jawline",
+    "readerQuestion": "Does chewing hard gum (like Falim or Mastic gum) actually give you a sharper jawline?",
+    "claims": [
+      {
+        "id": "c2",
+        "statement": "Gum chewing training does increase bite force in healthy adults. The strength gain was seen in a 6-month RCT and also in a small trial of hard gum.",
+        "stance": "supported",
+        "evidence": [
+          {
+            "pmid": "39215439",
+            "quote": "Mastication training using gum increases maximum occlusal force due to an increase in occlusal contact area but has no effect on MMT or mandibular shape."
+          },
+          {
+            "pmid": "7709901",
+            "quote": "In conclusion, 4 weeks training with a hard chewing gum seems to influence the functional capacity of the masticatory muscles and increase their strength."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c3",
+        "statement": "Stronger bite force from chewing gum is a functional change. This study doesn't show it makes the jaw bigger or changes its shape. In the 6-month RCT in healthy adults, bite force rose while masseter thickness and jaw shape did not change.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "39215439",
+            "quote": "The mean maximum occlusal force of the training group at 3 months was significantly higher than that at baseline, which was also significantly different from that in the control group (p < .001)."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c4",
+        "statement": "One month of gum chewing training changed how oxygen is used in the masseter muscle and improved its aerobic capacity. This was a very small trial (16 people) that measured muscle physiology, not appearance.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "39400843",
+            "quote": "In conclusion, 1 month of GCh training changed masseter oxygen dynamics during clenching and recovery and improved muscle aerobic capacity."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c5",
+        "statement": "A small cross-sectional study of young adults found no statistically significant link between gum-chewing frequency, duration or chronicity and temporomandibular disorders. The study was underpowered and can't show causation, so it doesn't prove heavy chewing is safe.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "40806875",
+            "quote": "No statistically significant associations were found between TMD occurrence and the frequency, duration, or chronicity of gum chewing (p > 0.05)."
+          }
+        ],
+        "searches": []
+      }
+    ],
+    "advice": [
+      "Don't count on hard gum to sharpen your jawline. The best trial found no change in jaw shape.",
+      "If you try gum anyway, stop if you get jaw pain, clicking, locking or headaches, and see a dentist or TMD specialist.",
+      "Jaw definition mostly depends on body fat, bone structure and dental or skeletal alignment. A dentist, orthodontist or maxillofacial surgeon can assess your bite and facial structure.",
+      "Don't use extremely hard or non-food chewing products in place of professional advice if you already have jaw problems."
+    ]
+  },
+  "finishedAt": "2026-10-02T21:58:45.833Z",
+  "note": "Archived run before the F8 fix. The verifier dropped claim c1, a real null-result RCT, because the researcher had labeled it not_supported."
+}

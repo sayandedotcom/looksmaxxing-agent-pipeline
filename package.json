@@ -1,0 +1,28 @@
+{
+  "name": "looksmaxxing-pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pipeline": "node --env-file=.env.local --import tsx src/pipeline.ts",
+    "typecheck": "tsc --noEmit",
+    "rebuild": "node --import tsx src/rebuild.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.71",
+    "ai": "^7.0.127",
+    "marked": "^18.0.14",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}

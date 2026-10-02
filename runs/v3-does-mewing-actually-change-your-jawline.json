@@ -1,0 +1,655 @@
+{
+  "topic": "does mewing actually change your jawline",
+  "slug": "v3-does-mewing-actually-change-your-jawline",
+  "models": {
+    "researcher": "anthropic/claude-sonnet-5-5",
+    "writer": "anthropic/claude-sonnet-5-5",
+    "judge": "anthropic/claude-opus-5-5",
+    "editor": "anthropic/claude-opus-5-5"
+  },
+  "startedAt": "2026-10-02T21:50:41.339Z",
+  "steps": [
+    {
+      "name": "1 · research",
+      "ms": 31012,
+      "ok": true,
+      "output": {
+        "toolCalls": [
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "orofacial myofunctional therapy facial growth"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "tongue posture mandible morphology"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "mewing"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "tongue posture adult jaw shape change exercise"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "31005620"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "41739658"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "22467568"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "42674114"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "myofunctional therapy randomized trial skeletal changes"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "tongue posture and craniofacial growth systematic review"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "30152171"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "31597520"
+            }
+          },
+          {
+            "tool": "getAbstract",
+            "input": {
+              "pmid": "41468291"
+            }
+          },
+          {
+            "tool": "searchPubMed",
+            "input": {
+              "query": "tongue posture training adults mandible jawline randomized"
+            }
+          }
+        ],
+        "brief": {
+          "topic": "Does mewing (deliberate tongue posture) actually change your jawline?",
+          "readerQuestion": "Does mewing actually change your jawline or face shape as an adult?",
+          "claims": [
+            {
+              "id": "c1",
+              "statement": "No controlled study found that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.",
+              "stance": "not_supported",
+              "evidence": [],
+              "searches": [
+                "mewing",
+                "tongue posture adult jaw shape change exercise",
+                "tongue posture training adults mandible jawline randomized",
+                "tongue posture and craniofacial growth systematic review"
+              ]
+            },
+            {
+              "id": "c2",
+              "statement": "Tongue posture is associated with jaw and dental-arch shape in people with Class III malocclusion. This is a cross-sectional association in a small sample, so it does not show that changing tongue posture changes the jaw.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "22467568",
+                  "quote": "Tongue posture is significantly lower in Class III subjects and is associated with the dentoalveolar characteristics of the maxilla and mandible."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c3",
+              "statement": "A systematic review of early orthodontic and myofunctional treatment in growing children called it promising but rated the evidence quality as questionable. These results come from children and do not extend to adults doing tongue posture at home.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "30152171",
+                  "quote": "Although early orthodontic management and myofunctional treatment in the deciduous and mixed dentition children appears to be a promising approach, the quality of the existing evidence is questionable."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c4",
+              "statement": "In children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. The evidence was moderate to low quality.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "31597520",
+                  "quote": "However, compared to custom-made functional appliances, PMAs are less effective in producing dental, skeletal or soft-tissue changes, even though they are less costly."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c5",
+              "statement": "A randomized study of orofacial muscle exercises after jaw surgery measured changes in muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "41468291",
+                  "quote": "At 180 days, the EMG values showed no statistical difference between the 2 groups."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c6",
+              "statement": "Analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "42674114",
+                  "quote": "The data demonstrate that looksmaxxing practices constitute a significant online phenomenon with substantial reach and engagement, particularly among young men."
+                },
+                {
+                  "pmid": "42674114",
+                  "quote": "Qualitative thematic analysis of the 100 most-engaged posts identified four dominant narratives: (1) self-improvement as empowerment; (2) pseudoscientific legitimacy; (3) community belonging and mutual validation; and (4) risk minimization and normalization."
+                }
+              ],
+              "searches": []
+            }
+          ],
+          "advice": [
+            "Don't expect mewing to replace orthognathic surgery or orthodontic treatment. Be skeptical of before-and-after photos, since angle, lighting, weight, and age affect how a jawline looks.",
+            "If you're concerned about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment.",
+            "If you want a sharper-looking jawline, ask a clinician about options such as body fat reduction or professionally supervised cosmetic procedures. Avoid DIY techniques like bonesmashing."
+          ]
+        },
+        "usage": {
+          "inputTokens": 24866,
+          "inputTokenDetails": {
+            "noCacheTokens": 24866,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
+          },
+          "outputTokens": 2502,
+          "outputTokenDetails": {
+            "textTokens": 2096,
+            "reasoningTokens": 406
+          },
+          "totalTokens": 27368
+        }
+      }
+    },
+    {
+      "name": "2 · verify citations",
+      "ms": 30574,
+      "ok": true,
+      "output": {
+        "brief": {
+          "topic": "Does mewing (deliberate tongue posture) actually change your jawline?",
+          "readerQuestion": "Does mewing actually change your jawline or face shape as an adult?",
+          "claims": [
+            {
+              "id": "c1",
+              "statement": "No controlled study found that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.",
+              "stance": "not_supported",
+              "evidence": [],
+              "searches": [
+                "mewing",
+                "tongue posture adult jaw shape change exercise",
+                "tongue posture training adults mandible jawline randomized",
+                "tongue posture and craniofacial growth systematic review"
+              ]
+            },
+            {
+              "id": "c2",
+              "statement": "Tongue posture is associated with jaw and dental-arch shape in people with Class III malocclusion. This is a cross-sectional association in a small sample, so it does not show that changing tongue posture changes the jaw.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "22467568",
+                  "quote": "Tongue posture is significantly lower in Class III subjects and is associated with the dentoalveolar characteristics of the maxilla and mandible."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c3",
+              "statement": "A systematic review of early orthodontic and myofunctional treatment in growing children called it promising but rated the evidence quality as questionable. These results come from children and do not extend to adults doing tongue posture at home.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "30152171",
+                  "quote": "Although early orthodontic management and myofunctional treatment in the deciduous and mixed dentition children appears to be a promising approach, the quality of the existing evidence is questionable."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c4",
+              "statement": "In children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. The evidence was moderate to low quality.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "31597520",
+                  "quote": "However, compared to custom-made functional appliances, PMAs are less effective in producing dental, skeletal or soft-tissue changes, even though they are less costly."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c5",
+              "statement": "A randomized study of orofacial muscle exercises after jaw surgery measured changes in muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days.",
+              "stance": "mixed",
+              "evidence": [
+                {
+                  "pmid": "41468291",
+                  "quote": "At 180 days, the EMG values showed no statistical difference between the 2 groups."
+                }
+              ],
+              "searches": []
+            },
+            {
+              "id": "c6",
+              "statement": "Analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men.",
+              "stance": "supported",
+              "evidence": [
+                {
+                  "pmid": "42674114",
+                  "quote": "The data demonstrate that looksmaxxing practices constitute a significant online phenomenon with substantial reach and engagement, particularly among young men."
+                },
+                {
+                  "pmid": "42674114",
+                  "quote": "Qualitative thematic analysis of the 100 most-engaged posts identified four dominant narratives: (1) self-improvement as empowerment; (2) pseudoscientific legitimacy; (3) community belonging and mutual validation; and (4) risk minimization and normalization."
+                }
+              ],
+              "searches": []
+            }
+          ],
+          "advice": [
+            "Don't expect mewing to replace orthognathic surgery or orthodontic treatment. Be skeptical of before-and-after photos, since angle, lighting, weight, and age affect how a jawline looks.",
+            "If you're concerned about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment.",
+            "If you want a sharper-looking jawline, ask a clinician about options such as body fat reduction or professionally supervised cosmetic procedures. Avoid DIY techniques like bonesmashing."
+          ]
+        },
+        "checks": [
+          {
+            "claimId": "c1",
+            "original": "No controlled study found that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.",
+            "evidence": [],
+            "searches": [
+              {
+                "query": "mewing",
+                "ran": true,
+                "titles": [
+                  "Mewing: Social Media's Alternative to Orthognathic Surgery?",
+                  "The mewing trend.",
+                  "When Help Is Harm: Health, Lookism and Self-Improvement in the Manosphere.",
+                  "Mewing cry in a child with the partial deletion of the short arm of chromosome no. 4.",
+                  "Dysphonia in infants.",
+                  "Delineation of the dup5q phenotype by molecular cytogenetic analysis in a patient with dup5q/del 5p (cri du chat).",
+                  "Dangerous trends on social media related to facial esthetics: Analysis of looksmaxxing and its softmaxxing and hardmaxxing practices.",
+                  "Cri-du-chat syndrome mimics Silver-Russell syndrome depending on the size of the deletion: a case report."
+                ]
+              },
+              {
+                "query": "tongue posture adult jaw shape change exercise",
+                "ran": true,
+                "titles": []
+              },
+              {
+                "query": "tongue posture training adults mandible jawline randomized",
+                "ran": true,
+                "titles": []
+              },
+              {
+                "query": "tongue posture and craniofacial growth systematic review",
+                "ran": true,
+                "titles": []
+              }
+            ],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "None of the returned titles is a controlled study testing whether mewing or tongue-posture training changes jaw shape in adults. The 'mewing' hits are commentaries or social-media analyses (the mewing trend, looksmaxxing, the manosphere) or unrelated cri-du-chat 'mewing cry' papers. The targeted searches on adult tongue-posture training and jaw or jawline outcomes returned nothing. By the stated rule, the absence of any testing study backs the not_supported claim.",
+              "narrowed": "No controlled study found that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults."
+            }
+          },
+          {
+            "claimId": "c2",
+            "original": "Tongue posture is associated with jaw and dental-arch shape in people with Class III malocclusion. This is a cross-sectional association in a small sample, so it does not show that changing tongue posture changes the jaw.",
+            "evidence": [
+              {
+                "claimId": "c2",
+                "pmid": "22467568",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract describes a cross-sectional comparison of 20 Class III and 20 Class I subjects. Class III subjects had lower tongue posture, and tongue posture was associated with maxillary and mandibular dentoalveolar morphology: arch widths, palatal vault, and mouth floor. The only significant correlation was modest (rho = 0.44). No intervention was tested, so the caveat that the study cannot show causation follows from its design and does not overstate the finding.",
+              "narrowed": "Tongue posture is associated with jaw and dental-arch shape in people with Class III malocclusion. This is a cross-sectional association in a small sample, so it does not show that changing tongue posture changes the jaw."
+            }
+          },
+          {
+            "claimId": "c3",
+            "original": "A systematic review of early orthodontic and myofunctional treatment in growing children called it promising but rated the evidence quality as questionable. These results come from children and do not extend to adults doing tongue posture at home.",
+            "evidence": [
+              {
+                "claimId": "c3",
+                "pmid": "30152171",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract describes a systematic review of early orthodontic and myofunctional treatment in children with developing dentition. It calls the approach 'promising' and says 'the quality of the existing evidence is questionable.' The second sentence is an inference about limits: the review covers only children in clinical settings, so the sources contain no evidence about adults doing tongue posture at home. That fits the mixed stance.",
+              "narrowed": "A systematic review of early orthodontic and myofunctional treatment in growing children called it promising but rated the evidence quality as questionable. These results come from children and do not extend to adults doing tongue posture at home."
+            }
+          },
+          {
+            "claimId": "c4",
+            "original": "In children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. The evidence was moderate to low quality.",
+            "evidence": [
+              {
+                "claimId": "c4",
+                "pmid": "31597520",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract concludes that, compared with custom-made functional appliances, prefabricated myofunctional appliances in children (mean age 10.2) were less effective at producing dental, skeletal or soft-tissue changes. It also rates the evidence quality as moderate to low because of risk of bias. The mixed stance fits the source, which also finds the appliances more effective than no treatment.",
+              "narrowed": "In children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. The evidence was moderate to low quality."
+            }
+          },
+          {
+            "claimId": "c5",
+            "original": "A randomized study of orofacial muscle exercises after jaw surgery measured changes in muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days.",
+            "evidence": [
+              {
+                "claimId": "c5",
+                "pmid": "41468291",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The abstract describes a randomized controlled study of orofacial myofunctional exercise after LeFort I/BSSO surgery. Its outcome was EMG muscle activity, with no bone or facial shape outcomes reported. It states that the masseter and temporalis EMG values showed no statistical difference between groups at 180 days. The claim matches the abstract on population, outcome and timing.",
+              "narrowed": "A randomized study of orofacial muscle exercises after jaw surgery measured changes in muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days."
+            }
+          },
+          {
+            "claimId": "c6",
+            "original": "Analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men.",
+            "evidence": [
+              {
+                "claimId": "c6",
+                "pmid": "42674114",
+                "exists": true,
+                "quoteFound": true
+              },
+              {
+                "claimId": "c6",
+                "pmid": "42674114",
+                "exists": true,
+                "quoteFound": true
+              }
+            ],
+            "searches": [],
+            "kept": true,
+            "entailment": {
+              "verdict": "backs",
+              "reason": "The study's thematic analysis of the 100 most-engaged looksmaxxing posts (search terms included mewing and bonesmashing) identified 'pseudoscientific legitimacy' as a dominant narrative. The conclusions say dangerous practices are being normalized in online communities through pseudoscientific language and community validation, and that the phenomenon reaches young men in particular. One minor caveat: the abstract measured gender (mostly male), not age.",
+              "narrowed": "Analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "3 · write",
+      "ms": 20280,
+      "ok": true,
+      "output": "# Mewing and Your Jawline: What the Research Shows\n\nYou've read the threads. Half of them say mewing rebuilt someone's face in eighteen months, and the other half say it's cope. Here's what the literature supports, what it doesn't, and what you can do about it.\n\n## The short version\n\nWe searched PubMed for \"mewing,\" \"tongue posture adult jaw shape change exercise,\" \"tongue posture training adults mandible jawline randomized,\" and \"tongue posture and craniofacial growth systematic review.\" We found no controlled study showing that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.\n\nThat's not the same as a study proving it fails. Nobody has run the trial that would settle it, so the claim has no controlled evidence behind it. Treat anyone who sounds certain, in either direction, with some suspicion.\n\n## Where the \"tongue posture matters\" idea comes from\n\nThe idea isn't pulled from nowhere. There's research linking tongue posture to jaw structure, but it's narrower than the forum version.\n\nOne study looked at people with Class III malocclusion and found that tongue posture was significantly lower in that group and was associated with the dentoalveolar characteristics of the maxilla and mandible. [PMID:22467568] The catch is that this was a cross-sectional association in a small sample. It shows two things tend to show up together. It doesn't show that changing your tongue posture changes your jaw. A lower tongue position could be a cause, a consequence, or just a bystander. A snapshot can't tell you which.\n\nIf you've ever argued \"correlation isn't causation\" in a thread and then ignored it when it favored your routine, this is that moment.\n\n## The kid studies don't transfer to you\n\nThe more hopeful research is in growing children. A systematic review of early orthodontic and myofunctional treatment in kids called the approach promising but rated the quality of the existing evidence as questionable. [PMID:30152171] Those results come from children and don't extend to adults doing tongue posture at home. Growing kids and finished adults are different situations, and the review doesn't claim otherwise.\n\nAnother review found that in children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. [PMID:31597520] The evidence was moderate to low quality. The takeaway isn't that custom appliances are a magic fix. It's that even in the kid literature, the generic off-the-shelf version loses to the version fitted by a professional. Whatever you're doing with your tongue and a YouTube video is further down that ladder.\n\n## Muscle exercises aren't bone exercises\n\nSome people point to exercise research as proof that training the face works. Look at what was measured. A randomized study of orofacial muscle exercises after jaw surgery tracked muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days. [PMID:41468291]\n\nSo even the muscle outcome, which is the easier one to move, didn't hold a group difference at six months in that study. It tells you very little about whether tongue posture reshapes a jaw.\n\n## Why the claims sound so convincing anyway\n\nAn analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men. [PMID:42674114] Their analysis of the 100 most-engaged posts identified four dominant narratives: self-improvement as empowerment, pseudoscientific legitimacy, community belonging and mutual validation, and risk minimization and normalization. [PMID:42674114]\n\nNotice how those fit together. The vocabulary sounds clinical, the community is supportive, and the risks get waved off. That's a good recipe for spreading a practice, and it says nothing about whether the practice works. The same applies to the self-improvement framing. Wanting to look better is fine. The question is whether the method has anything behind it.\n\n## What to do instead\n\n**Read before-and-after photos skeptically.** Angle, lighting, weight, and age all change how a jawline looks. A two-year \"transformation\" that includes a haircut, a cut in body fat, and a better camera isn't evidence about tongue posture.\n\n**Don't expect mewing to replace surgery or orthodontics.** If a structural issue is what's bothering you, a tongue exercise isn't a substitute for treatment that's actually been studied for it.\n\n**Get a real assessment if you have a real concern.** If you're worried about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment. That gets you measurements instead of mirror guesses.\n\n**If the goal is a sharper-looking jawline, ask a clinician about options** such as body fat reduction or professionally supervised cosmetic procedures. Those are conversations to have with someone qualified, not with a forum.\n\n**Skip DIY bone-changing techniques like bonesmashing.** The research on online looksmaxxing flags this kind of practice as dangerous and notes how easily it gets normalized. There's no upside here worth finding out the hard way.\n\n## Bottom line\n\nKeeping your tongue against your palate is free and probably harmless, so if you like doing it, nobody's stopping you. Just don't confuse \"free and probably harmless\" with \"proven to change your jaw.\" In adults, no controlled study we could find has tested that. The most relevant positive-sounding research is either an association in a small sample or work in children with questionable evidence quality.\n\nIf you want a different jaw, the path runs through measurements and a clinician. If you want a sharper-looking one, it may run through body fat and a conversation about supervised options. Neither one makes for a viral clip, but both are better bets than a six-month experiment on your own face."
+    },
+    {
+      "name": "4 · editor review (round 1)",
+      "ms": 26628,
+      "ok": true,
+      "output": {
+        "issues": [
+          {
+            "kind": "overstated",
+            "excerpt": "Nobody has run the trial that would settle it, so the claim has no controlled evidence behind it.",
+            "fix": "We didn't find the trial that would settle it, so the claim has no controlled evidence behind it."
+          },
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "So even the muscle outcome, which is the easier one to move, didn't hold a group difference at six months in that study.",
+            "fix": "So even the muscle outcome didn't hold a group difference at six months in that study."
+          },
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "Keeping your tongue against your palate is free and probably harmless, so if you like doing it, nobody's stopping you.",
+            "fix": "Keeping your tongue against your palate costs nothing, so if you like doing it, nobody's stopping you."
+          },
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "Just don't confuse \"free and probably harmless\" with \"proven to change your jaw.\"",
+            "fix": "Just don't confuse \"free\" with \"proven to change your jaw.\""
+          }
+        ],
+        "verdict": "revise",
+        "coverage": {
+          "sentences": 65,
+          "ruled": 65,
+          "byBasis": {
+            "not_factual": 25,
+            "claim": 31,
+            "advice": 9
+          }
+        }
+      }
+    },
+    {
+      "name": "3 · revise (round 1)",
+      "ms": 9111,
+      "ok": true,
+      "output": "# Mewing and Your Jawline: What the Research Shows\n\nYou've read the threads. Half of them say mewing rebuilt someone's face in eighteen months, and the other half say it's cope. Here's what the literature supports, what it doesn't, and what you can do about it.\n\n## The short version\n\nWe searched PubMed for \"mewing,\" \"tongue posture adult jaw shape change exercise,\" \"tongue posture training adults mandible jawline randomized,\" and \"tongue posture and craniofacial growth systematic review.\" We found no controlled study showing that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.\n\nThat's not the same as a study proving it fails. We didn't find the trial that would settle it, so the claim has no controlled evidence behind it. Treat anyone who sounds certain, in either direction, with some suspicion.\n\n## Where the \"tongue posture matters\" idea comes from\n\nThe idea isn't pulled from nowhere. There's research linking tongue posture to jaw structure, but it's narrower than the forum version.\n\nOne study looked at people with Class III malocclusion and found that tongue posture was significantly lower in that group and was associated with the dentoalveolar characteristics of the maxilla and mandible. [PMID:22467568] The catch is that this was a cross-sectional association in a small sample. It shows two things tend to show up together. It doesn't show that changing your tongue posture changes your jaw. A lower tongue position could be a cause, a consequence, or just a bystander. A snapshot can't tell you which.\n\nIf you've ever argued \"correlation isn't causation\" in a thread and then ignored it when it favored your routine, this is that moment.\n\n## The kid studies don't transfer to you\n\nThe more hopeful research is in growing children. A systematic review of early orthodontic and myofunctional treatment in kids called the approach promising but rated the quality of the existing evidence as questionable. [PMID:30152171] Those results come from children and don't extend to adults doing tongue posture at home. Growing kids and finished adults are different situations, and the review doesn't claim otherwise.\n\nAnother review found that in children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. [PMID:31597520] The evidence was moderate to low quality. The takeaway isn't that custom appliances are a magic fix. It's that even in the kid literature, the generic off-the-shelf version loses to the version fitted by a professional. Whatever you're doing with your tongue and a YouTube video is further down that ladder.\n\n## Muscle exercises aren't bone exercises\n\nSome people point to exercise research as proof that training the face works. Look at what was measured. A randomized study of orofacial muscle exercises after jaw surgery tracked muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days. [PMID:41468291]\n\nSo even the muscle outcome didn't hold a group difference at six months in that study. It tells you very little about whether tongue posture reshapes a jaw.\n\n## Why the claims sound so convincing anyway\n\nAn analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men. [PMID:42674114] Their analysis of the 100 most-engaged posts identified four dominant narratives: self-improvement as empowerment, pseudoscientific legitimacy, community belonging and mutual validation, and risk minimization and normalization. [PMID:42674114]\n\nNotice how those fit together. The vocabulary sounds clinical, the community is supportive, and the risks get waved off. That's a good recipe for spreading a practice, and it says nothing about whether the practice works. The same applies to the self-improvement framing. Wanting to look better is fine. The question is whether the method has anything behind it.\n\n## What to do instead\n\n**Read before-and-after photos skeptically.** Angle, lighting, weight, and age all change how a jawline looks. A two-year \"transformation\" that includes a haircut, a cut in body fat, and a better camera isn't evidence about tongue posture.\n\n**Don't expect mewing to replace surgery or orthodontics.** If a structural issue is what's bothering you, a tongue exercise isn't a substitute for treatment that's actually been studied for it.\n\n**Get a real assessment if you have a real concern.** If you're worried about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment. That gets you measurements instead of mirror guesses.\n\n**If the goal is a sharper-looking jawline, ask a clinician about options** such as body fat reduction or professionally supervised cosmetic procedures. Those are conversations to have with someone qualified, not with a forum.\n\n**Skip DIY bone-changing techniques like bonesmashing.** The research on online looksmaxxing flags this kind of practice as dangerous and notes how easily it gets normalized. There's no upside here worth finding out the hard way.\n\n## Bottom line\n\nKeeping your tongue against your palate costs nothing, so if you like doing it, nobody's stopping you. Just don't confuse \"free\" with \"proven to change your jaw.\" In adults, no controlled study we could find has tested that. The most relevant positive-sounding research is either an association in a small sample or work in children with questionable evidence quality.\n\nIf you want a different jaw, the path runs through measurements and a clinician. If you want a sharper-looking one, it may run through body fat and a conversation about supervised options. Neither one makes for a viral clip, but both are better bets than a six-month experiment on your own face."
+    },
+    {
+      "name": "4 · editor review (round 2)",
+      "ms": 23814,
+      "ok": true,
+      "output": {
+        "issues": [
+          {
+            "kind": "tone",
+            "excerpt": "If you've ever argued \"correlation isn't causation\" in a thread and then ignored it when it favored your routine, this is that moment.",
+            "fix": "Drop the jab at the reader; e.g. 'This is a correlation, not proof of cause.'"
+          },
+          {
+            "kind": "overstated",
+            "excerpt": "Whatever you're doing with your tongue and a YouTube video is further down that ladder.",
+            "fix": "Make clear this is an inference, not a finding: 'None of this was tested in adults doing tongue posture at home, so it offers no support for DIY mewing.'"
+          }
+        ],
+        "verdict": "revise",
+        "coverage": {
+          "sentences": 65,
+          "ruled": 65,
+          "byBasis": {
+            "not_factual": 25,
+            "claim": 31,
+            "advice": 9
+          }
+        }
+      }
+    },
+    {
+      "name": "3 · revise (round 2)",
+      "ms": 9517,
+      "ok": true,
+      "output": "# Mewing and Your Jawline: What the Research Shows\n\nYou've read the threads. Half of them say mewing rebuilt someone's face in eighteen months, and the other half say it's cope. Here's what the literature supports, what it doesn't, and what you can do about it.\n\n## The short version\n\nWe searched PubMed for \"mewing,\" \"tongue posture adult jaw shape change exercise,\" \"tongue posture training adults mandible jawline randomized,\" and \"tongue posture and craniofacial growth systematic review.\" We found no controlled study showing that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.\n\nThat's not the same as a study proving it fails. We didn't find the trial that would settle it, so the claim has no controlled evidence behind it. Treat anyone who sounds certain, in either direction, with some suspicion.\n\n## Where the \"tongue posture matters\" idea comes from\n\nThe idea isn't pulled from nowhere. There's research linking tongue posture to jaw structure, but it's narrower than the forum version.\n\nOne study looked at people with Class III malocclusion and found that tongue posture was significantly lower in that group and was associated with the dentoalveolar characteristics of the maxilla and mandible. [PMID:22467568] The catch is that this was a cross-sectional association in a small sample. It shows two things tend to show up together. It doesn't show that changing your tongue posture changes your jaw. A lower tongue position could be a cause, a consequence, or just a bystander. A snapshot can't tell you which.\n\nThis is a correlation, not proof of cause.\n\n## The kid studies don't transfer to you\n\nThe more hopeful research is in growing children. A systematic review of early orthodontic and myofunctional treatment in kids called the approach promising but rated the quality of the existing evidence as questionable. [PMID:30152171] Those results come from children and don't extend to adults doing tongue posture at home. Growing kids and finished adults are different situations, and the review doesn't claim otherwise.\n\nAnother review found that in children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. [PMID:31597520] The evidence was moderate to low quality. The takeaway isn't that custom appliances are a magic fix. It's that even in the kid literature, the generic off-the-shelf version loses to the version fitted by a professional. None of this was tested in adults doing tongue posture at home, so it offers no support for DIY mewing.\n\n## Muscle exercises aren't bone exercises\n\nSome people point to exercise research as proof that training the face works. Look at what was measured. A randomized study of orofacial muscle exercises after jaw surgery tracked muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days. [PMID:41468291]\n\nSo even the muscle outcome didn't hold a group difference at six months in that study. It tells you very little about whether tongue posture reshapes a jaw.\n\n## Why the claims sound so convincing anyway\n\nAn analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men. [PMID:42674114] Their analysis of the 100 most-engaged posts identified four dominant narratives: self-improvement as empowerment, pseudoscientific legitimacy, community belonging and mutual validation, and risk minimization and normalization. [PMID:42674114]\n\nNotice how those fit together. The vocabulary sounds clinical, the community is supportive, and the risks get waved off. That's a good recipe for spreading a practice, and it says nothing about whether the practice works. The same applies to the self-improvement framing. Wanting to look better is fine. The question is whether the method has anything behind it.\n\n## What to do instead\n\n**Read before-and-after photos skeptically.** Angle, lighting, weight, and age all change how a jawline looks. A two-year \"transformation\" that includes a haircut, a cut in body fat, and a better camera isn't evidence about tongue posture.\n\n**Don't expect mewing to replace surgery or orthodontics.** If a structural issue is what's bothering you, a tongue exercise isn't a substitute for treatment that's actually been studied for it.\n\n**Get a real assessment if you have a real concern.** If you're worried about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment. That gets you measurements instead of mirror guesses.\n\n**If the goal is a sharper-looking jawline, ask a clinician about options** such as body fat reduction or professionally supervised cosmetic procedures. Those are conversations to have with someone qualified, not with a forum.\n\n**Skip DIY bone-changing techniques like bonesmashing.** The research on online looksmaxxing flags this kind of practice as dangerous and notes how easily it gets normalized. There's no upside here worth finding out the hard way.\n\n## Bottom line\n\nKeeping your tongue against your palate costs nothing, so if you like doing it, nobody's stopping you. Just don't confuse \"free\" with \"proven to change your jaw.\" In adults, no controlled study we could find has tested that. The most relevant positive-sounding research is either an association in a small sample or work in children with questionable evidence quality.\n\nIf you want a different jaw, the path runs through measurements and a clinician. If you want a sharper-looking one, it may run through body fat and a conversation about supervised options. Neither one makes for a viral clip, but both are better bets than a six-month experiment on your own face."
+    },
+    {
+      "name": "4 · editor review (round 3)",
+      "ms": 27078,
+      "ok": true,
+      "output": {
+        "issues": [
+          {
+            "kind": "unsupported_claim",
+            "excerpt": "**Don't expect mewing to replace surgery or orthodontics.** If a structural issue is what's bothering you, a tongue exercise isn't a substitute for treatment that's actually been studied for it.",
+            "fix": "Drop the claim that surgery/orthodontics is 'treatment that's actually been studied for it'; the brief has no evidence on that. Say: 'If a structural issue is what's bothering you, talk to a specialist rather than relying on a tongue exercise.'"
+          }
+        ],
+        "verdict": "revise",
+        "coverage": {
+          "sentences": 65,
+          "ruled": 65,
+          "byBasis": {
+            "not_factual": 23,
+            "claim": 33,
+            "advice": 9
+          }
+        }
+      }
+    },
+    {
+      "name": "5 · publish",
+      "ms": 9,
+      "ok": true,
+      "output": {
+        "status": "held"
+      }
+    }
+  ],
+  "status": "held",
+  "finalDraft": "# Mewing and Your Jawline: What the Research Shows\n\nYou've read the threads. Half of them say mewing rebuilt someone's face in eighteen months, and the other half say it's cope. Here's what the literature supports, what it doesn't, and what you can do about it.\n\n## The short version\n\nWe searched PubMed for \"mewing,\" \"tongue posture adult jaw shape change exercise,\" \"tongue posture training adults mandible jawline randomized,\" and \"tongue posture and craniofacial growth systematic review.\" We found no controlled study showing that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.\n\nThat's not the same as a study proving it fails. We didn't find the trial that would settle it, so the claim has no controlled evidence behind it. Treat anyone who sounds certain, in either direction, with some suspicion.\n\n## Where the \"tongue posture matters\" idea comes from\n\nThe idea isn't pulled from nowhere. There's research linking tongue posture to jaw structure, but it's narrower than the forum version.\n\nOne study looked at people with Class III malocclusion and found that tongue posture was significantly lower in that group and was associated with the dentoalveolar characteristics of the maxilla and mandible. [PMID:22467568] The catch is that this was a cross-sectional association in a small sample. It shows two things tend to show up together. It doesn't show that changing your tongue posture changes your jaw. A lower tongue position could be a cause, a consequence, or just a bystander. A snapshot can't tell you which.\n\nThis is a correlation, not proof of cause.\n\n## The kid studies don't transfer to you\n\nThe more hopeful research is in growing children. A systematic review of early orthodontic and myofunctional treatment in kids called the approach promising but rated the quality of the existing evidence as questionable. [PMID:30152171] Those results come from children and don't extend to adults doing tongue posture at home. Growing kids and finished adults are different situations, and the review doesn't claim otherwise.\n\nAnother review found that in children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. [PMID:31597520] The evidence was moderate to low quality. The takeaway isn't that custom appliances are a magic fix. It's that even in the kid literature, the generic off-the-shelf version loses to the version fitted by a professional. None of this was tested in adults doing tongue posture at home, so it offers no support for DIY mewing.\n\n## Muscle exercises aren't bone exercises\n\nSome people point to exercise research as proof that training the face works. Look at what was measured. A randomized study of orofacial muscle exercises after jaw surgery tracked muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days. [PMID:41468291]\n\nSo even the muscle outcome didn't hold a group difference at six months in that study. It tells you very little about whether tongue posture reshapes a jaw.\n\n## Why the claims sound so convincing anyway\n\nAn analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men. [PMID:42674114] Their analysis of the 100 most-engaged posts identified four dominant narratives: self-improvement as empowerment, pseudoscientific legitimacy, community belonging and mutual validation, and risk minimization and normalization. [PMID:42674114]\n\nNotice how those fit together. The vocabulary sounds clinical, the community is supportive, and the risks get waved off. That's a good recipe for spreading a practice, and it says nothing about whether the practice works. The same applies to the self-improvement framing. Wanting to look better is fine. The question is whether the method has anything behind it.\n\n## What to do instead\n\n**Read before-and-after photos skeptically.** Angle, lighting, weight, and age all change how a jawline looks. A two-year \"transformation\" that includes a haircut, a cut in body fat, and a better camera isn't evidence about tongue posture.\n\n**Don't expect mewing to replace surgery or orthodontics.** If a structural issue is what's bothering you, a tongue exercise isn't a substitute for treatment that's actually been studied for it.\n\n**Get a real assessment if you have a real concern.** If you're worried about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment. That gets you measurements instead of mirror guesses.\n\n**If the goal is a sharper-looking jawline, ask a clinician about options** such as body fat reduction or professionally supervised cosmetic procedures. Those are conversations to have with someone qualified, not with a forum.\n\n**Skip DIY bone-changing techniques like bonesmashing.** The research on online looksmaxxing flags this kind of practice as dangerous and notes how easily it gets normalized. There's no upside here worth finding out the hard way.\n\n## Bottom line\n\nKeeping your tongue against your palate costs nothing, so if you like doing it, nobody's stopping you. Just don't confuse \"free\" with \"proven to change your jaw.\" In adults, no controlled study we could find has tested that. The most relevant positive-sounding research is either an association in a small sample or work in children with questionable evidence quality.\n\nIf you want a different jaw, the path runs through measurements and a clinician. If you want a sharper-looking one, it may run through body fat and a conversation about supervised options. Neither one makes for a viral clip, but both are better bets than a six-month experiment on your own face.",
+  "brief": {
+    "topic": "Does mewing (deliberate tongue posture) actually change your jawline?",
+    "readerQuestion": "Does mewing actually change your jawline or face shape as an adult?",
+    "claims": [
+      {
+        "id": "c1",
+        "statement": "No controlled study found that mewing or deliberate tongue-posture training changes jaw or jawline shape in healthy adults.",
+        "stance": "not_supported",
+        "evidence": [],
+        "searches": [
+          "mewing",
+          "tongue posture adult jaw shape change exercise",
+          "tongue posture training adults mandible jawline randomized",
+          "tongue posture and craniofacial growth systematic review"
+        ]
+      },
+      {
+        "id": "c2",
+        "statement": "Tongue posture is associated with jaw and dental-arch shape in people with Class III malocclusion. This is a cross-sectional association in a small sample, so it does not show that changing tongue posture changes the jaw.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "22467568",
+            "quote": "Tongue posture is significantly lower in Class III subjects and is associated with the dentoalveolar characteristics of the maxilla and mandible."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c3",
+        "statement": "A systematic review of early orthodontic and myofunctional treatment in growing children called it promising but rated the evidence quality as questionable. These results come from children and do not extend to adults doing tongue posture at home.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "30152171",
+            "quote": "Although early orthodontic management and myofunctional treatment in the deciduous and mixed dentition children appears to be a promising approach, the quality of the existing evidence is questionable."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c4",
+        "statement": "In children, prefabricated myofunctional appliances were less effective than custom-made functional appliances at producing dental, skeletal or soft-tissue changes. The evidence was moderate to low quality.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "31597520",
+            "quote": "However, compared to custom-made functional appliances, PMAs are less effective in producing dental, skeletal or soft-tissue changes, even though they are less costly."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c5",
+        "statement": "A randomized study of orofacial muscle exercises after jaw surgery measured changes in muscle activity, not bone or jawline shape. The group differences in masseter and temporalis activity were gone by 180 days.",
+        "stance": "mixed",
+        "evidence": [
+          {
+            "pmid": "41468291",
+            "quote": "At 180 days, the EMG values showed no statistical difference between the 2 groups."
+          }
+        ],
+        "searches": []
+      },
+      {
+        "id": "c6",
+        "statement": "Analysis of online looksmaxxing content, including mewing and bonesmashing, found that posts use pseudoscientific language that lends them legitimacy. The authors say this helps normalize dangerous practices among young men.",
+        "stance": "supported",
+        "evidence": [
+          {
+            "pmid": "42674114",
+            "quote": "The data demonstrate that looksmaxxing practices constitute a significant online phenomenon with substantial reach and engagement, particularly among young men."
+          },
+          {
+            "pmid": "42674114",
+            "quote": "Qualitative thematic analysis of the 100 most-engaged posts identified four dominant narratives: (1) self-improvement as empowerment; (2) pseudoscientific legitimacy; (3) community belonging and mutual validation; and (4) risk minimization and normalization."
+          }
+        ],
+        "searches": []
+      }
+    ],
+    "advice": [
+      "Don't expect mewing to replace orthognathic surgery or orthodontic treatment. Be skeptical of before-and-after photos, since angle, lighting, weight, and age affect how a jawline looks.",
+      "If you're concerned about your jaw, bite, or breathing, see an orthodontist or an oral and maxillofacial surgeon for a proper cephalometric assessment.",
+      "If you want a sharper-looking jawline, ask a clinician about options such as body fat reduction or professionally supervised cosmetic procedures. Avoid DIY techniques like bonesmashing."
+    ]
+  },
+  "finishedAt": "2026-10-02T21:53:39.364Z",
+  "note": "Archived run 3 (held). Every round ruled on every sentence (F6 fixed), but the editor flagged sentences it had already passed in earlier rounds (F7)."
+}

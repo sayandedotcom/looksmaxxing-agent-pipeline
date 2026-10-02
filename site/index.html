@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>looksmaxxing.guide pipeline</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><a href="">looksmaxxing.guide <span>· pipeline demo</span></a></header>
+<main><h1>Evidence-checked articles, written by agents</h1>
+<p>A five-step pipeline built for looksmaxxing.guide. Each topic goes through
+<b>research</b> (an agent searching PubMed) → <b>verify</b> (code checks every quote against the real abstract, and a second model judges whether that abstract supports the claim) → <b>write</b> → <b>editor review</b> (a separate, stronger model looking for harm, overstatement and bad citations; loops back to the writer up to 3 times) → <b>publish</b>.
+Anything the editor never passes is held for a human instead of published.</p>
+<p>Every run has a public trace showing what each agent saw and did.</p>
+<h2>Runs</h2><ul class="runs"><li><span class="badge published">published</span> <a href="does-chewing-hard-gum-build-a-sharper-jawline/">does chewing hard gum build a sharper jawline</a> · <a href="does-chewing-hard-gum-build-a-sharper-jawline/trace.html">trace</a></li>
+<li><span class="badge published">published</span> <a href="v1-does-chewing-hard-gum-build-a-sharper-jawline/">does chewing hard gum build a sharper jawline</a> · <a href="v1-does-chewing-hard-gum-build-a-sharper-jawline/trace.html">trace</a><br><small class="meta">Archived run before the F8 fix. The verifier dropped claim c1, a real null-result RCT, because the researcher had labeled it not_supported.</small></li>
+<li><span class="badge published">published</span> <a href="finasteride-for-hair-loss-side-effects-and-what-the-evidence/">finasteride for hair loss: side effects and what the evidence says</a> · <a href="finasteride-for-hair-loss-side-effects-and-what-the-evidence/trace.html">trace</a></li>
+<li><span class="badge published">published</span> <a href="does-mewing-actually-change-your-jawline/">does mewing actually change your jawline</a> · <a href="does-mewing-actually-change-your-jawline/trace.html">trace</a></li>
+<li><span class="badge held">held</span> does mewing actually change your jawline · <a href="v3-does-mewing-actually-change-your-jawline/trace.html">trace</a><br><small class="meta">Archived run 3 (held). Every round ruled on every sentence (F6 fixed), but the editor flagged sentences it had already passed in earlier rounds (F7).</small></li>
+<li><span class="badge published">published</span> <a href="v1-does-mewing-actually-change-your-jawline/">does mewing actually change your jawline</a> · <a href="v1-does-mewing-actually-change-your-jawline/trace.html">trace</a><br><small class="meta">Archived first run, before fixes F2–F5. Every check passed, but the article contains unsourced medical claims, a misplaced citation and an &quot;overstated&quot; sentence the editor flagged and then passed anyway. See notes/failure-log.md.</small></li></ul></main></body></html>
